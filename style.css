@@ -1,0 +1,11 @@
+.logo-nav{
+    height: 15vh;
+}
+#home{
+    background-image: url(imgs/bac&cont/Untitled.png);
+    height: 100vh;
+    max-height: 95vh;
+}
+.letras-home{
+    height: 25vh;
+}

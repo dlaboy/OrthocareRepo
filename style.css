@@ -3,22 +3,57 @@
 }
 #home{
     background-image: url(imgs/bac&cont/Untitled.png);
+    filter: brightness(120%);
     height: 100vh;
     max-height: 95vh;
 }
 #about-us{
     height: 100vh;
+    
+}
+#ps{
+    background-image: url(imgs/bac&cont/Group\ 1\(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+
+
+}
+#contact{
+    background-image: url(imgs/bac&cont/escritorio-vacio-consultorio-medico-computadora-e-instrumentos-medicos-nadie-gabinete-utiliza-cita-consulta-visita-control-donde-medico-trata-pacientes-enfermedades_482257-41824.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.form{
+    background-color: rgba(255, 255, 255, 0.429);
+    height: 75%;
+}
+.info{
+    background-color: rgb(229, 226, 226);
+
 }
 .letras-home{
     height: 25vh;
+}
+.contact-logo{
+    height: 40vh;
 }
 .titles{
     color: navy;
 }
 .about-images{
-    height: 49vh;
+    height: 48vh;
     width: 38vw;
 
+}
+.form{
+    height: 100vh;
+}
+.real-form{
+    background-color: rgba(3, 74, 118, 0.567);
+    max-width: 75%;
+    
 }
 p{
     font-size: 22px ;

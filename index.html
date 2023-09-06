@@ -24,96 +24,105 @@
     ></script>
   </head>
   <body class="bg-light">
-    <section id="home" class="row d-flex flex-column justify-content-end">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <img class="logo-nav" src="./imgs/logos/logoo8.png" alt="" />
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <nav class="nav navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <img class="logo-nav" src="./imgs/logos/logoo8.png" alt="" />
+        <button
+          class="navbar-toggler border-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNavAltMarkup"
-          >
-            <div class="navbar-nav d-flex justify-content-around w-50">
-              <a class="nav-link text-light" aria-current="page" href="#"
-                >Home</a
-              >
-              <a class="nav-link text-light" href="#">About </a>
-              <a class="nav-link text-light" href="#">Experience</a>
-              <a class="nav-link text-light" aria-disabled="true">Contact</a>
-            </div>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav d-flex justify-content-around w-50">
+            <a class="nav-link text-light" aria-current="page" href="#home"
+              >Home</a
+            >
+            <a class="nav-link text-light" href="#about-us">About Us </a>
+            <a class="nav-link text-light" href="#ps">Products & Services</a>
+            <a class="nav-link text-light" aria-disabled="true" href="#contact"
+              >Contact</a
+            >
           </div>
         </div>
-      </nav>
-      <div class="mb-5 col d-flex container">
+      </div>
+    </nav>
+    <section id="home" class="row">
+      <div class="mb-5 col d-flex container flex-column">
         <div
-          class="mb-5 col d-flex justify-content-end align-items-center container"
+          class="mb-5 col d-flex flex-column justify-content-center justify-content-lg-end align-items-center container"
         >
           <img
             class="letras-home mb-5"
             src="./imgs/logos/Rectangle 27(3).png"
             alt=""
           />
+          <p class="text-light fw-lighter text-center">All in One Place</p>
         </div>
       </div>
     </section>
     <section
       id="about-us"
-      class="container d-flex flex-row justify-content-center mb-5"
+      class="container d-flex flex-lg-row flex-column justify-content-center mb-5"
     >
-      <div class="row d-flex flex-column">
-        <div class="col">
+      <div class="row d-flex flex-column justify-content-center">
+        <div class="col col-12 text-center">
           <h2 class="text-center fw-bold titles p-3">About Us</h2>
-          <p class="fw-lighter ms-4">
-            Orthocare’s team has been working with neurosurgeons, orthopedic
-            doctors, health-care professionals and medical institutions since
-            2023.
-          </p>
-          <p class="fw-lighter mb-3 ms-4">
-            We partnered with some of the top companies in order to provide
-            surgeons, access to the best surgical equipment including: implants
-            for trauma, spine, reconstruction neurosurgery, maxillofacial and
-            biologics.
-          </p>
         </div>
-        <div class="col d-flex align-items-center justify-content-center">
+        <div class="col d-flex flex-lg-column flex-row justify-content-center">
+          <div class="col">
+            <p class="fw-lighter">
+              Orthocare’s team has been working with neurosurgeons, orthopedic
+              doctors, health-care professionals and medical institutions since
+              2023.
+            </p>
+            <p class="fw-lighter mb-3">
+              We partnered with some of the top companies in order to provide
+              surgeons, access to the best surgical equipment including:
+              implants for trauma, spine, reconstruction neurosurgery,
+              maxillofacial and biologics.
+            </p>
+
+            <p class="fw-lighter">
+              We also provide technician services for local surgeons, billing
+              and coding services for orthopedic surgery and provide an
+              institutional support for medical billing.
+            </p>
+            <p class="fw-lighter">
+              We look forward to a bright future and to provide the best quality
+              of service to our clients and partners in Puerto Rico.
+            </p>
+          </div>
+        </div>
+
+        <!-- <div
+          class="d-lg-flex d-none col d-flex align-items-center justify-content-center"
+        >
           <img
             src="./imgs/bac&cont/doctora-irreconocible-laptop-sosteniendo-medicamentos-escribiendo-recetas_1098-17464.jpg"
             alt=""
             class="about-images shadow rounded-2"
           />
-        </div>
+        </div> -->
       </div>
-      <div class="row">
-        <div class="col d-flex justify-content-center align-items-center">
-          <img
-            src="./imgs/bac&cont/joven-medico-guapo-tunica-medica-estetoscopio_1303-17818.jpg"
-            alt=""
-            class="about-images shadow rounded-2"
-          />
-        </div>
+      <div class="row w-100">
         <div
-          class="col d-flex justify-content-center flex-column align-items-center"
+          class="d-lg-flex d-none col d-flex justify-content-center align-items-center"
         >
-          <p class="fw-lighter ms-4">
-            We also provide technician services for local surgeons, billing and
-            coding services for orthopedic surgery and provide an institutional
-            support for medical billing.
-          </p>
-          <p class="fw-lighter ms-4">
-            We look forward to a bright future and to provide the best quality
-            of service to our clients and partners in Puerto Rico.
-          </p>
+          <img
+            src="./imgs/bac&cont/ilustracion-concepto-ortopedico_114360-8807.jpg"
+            alt=""
+            class="about-images rounded-2"
+          />
         </div>
       </div>
     </section>
@@ -174,4 +183,16 @@
       </div>
     </section>
   </body>
+  <script>
+    const navbar = document.querySelector(".nav");
+    const section = document.querySelector("section");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > section.offsetTop) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    });
+  </script>
 </html>

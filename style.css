@@ -1,28 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar when section content overflows */
+}
+
 .logo-nav{
-    height: 15vh;
+    height: 10vh;
 }
 #home{
+    padding-top: 10rem;
     background-image: url(imgs/bac&cont/Untitled.png);
     filter: brightness(120%);
-    height: 100vh;
-    max-height: 95vh;
+    height: 85vh;
+    max-height: 85vh;
 }
 #about-us{
-    height: 100vh;
+    height: 90vh;
+
     
 }
 #ps{
     background-image: url(imgs/bac&cont/Group\ 1\(1\).png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 90vh;
 
 
 
 }
 #contact{
     background-image: url(imgs/bac&cont/escritorio-vacio-consultorio-medico-computadora-e-instrumentos-medicos-nadie-gabinete-utiliza-cita-consulta-visita-control-donde-medico-trata-pacientes-enfermedades_482257-41824.jpg);
-    height: 100vh;
+    height: 90vh;
     background-size: cover;
 }
 .form{
@@ -34,7 +42,8 @@
 
 }
 .letras-home{
-    height: 25vh;
+    height: 12vh;
+    max-width: 90vw;
 }
 .contact-logo{
     height: 40vh;
@@ -43,12 +52,11 @@
     color: navy;
 }
 .about-images{
-    height: 48vh;
-    width: 38vw;
+    height: 50vh;
 
 }
 .form{
-    height: 100vh;
+    height: 90vh;
 }
 .real-form{
     background-color: rgba(3, 74, 118, 0.567);
@@ -56,6 +64,22 @@
     
 }
 p{
-    font-size: 22px ;
-    width: 40vw;
+    font-size: clamp(1rem, 2.2vw, 1.3rem);
+    
+    width: 35vw;
 }
+.nav{
+    
+    /* background: linear-gradient(rgba(7, 71, 111, 0.564), rgba(66,191,171)); */
+    background: linear-gradient(rgb(63, 180, 160),rgba(7, 71, 111, 0.564));
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* Add other styles like height, padding, etc. */
+    z-index: 100; /* Ensures the navbar appears above other content */
+   
+}
+
+/* blue (0,95,154) */
+/* turq (66,191,171)  */

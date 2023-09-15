@@ -96,82 +96,22 @@ p{
     max-height: 80vh;
 }
 .pands:hover{
-    background-color: rgba(242, 242, 242, 0.257);
+    background-color: rgba(242, 242, 242, 0.302);
     position: relative;
     top: -20px;
-    transition: 0.5s ease-in all;
-
+    transition: 0.2s ease-in all;
+    box-shadow: 5px 10px  rgba(0, 44, 72, 0.566);
+    cursor: pointer;
+    /* border: solid;
+    /* border-style: groove; */
+    
 }
-/* .goog-te-gadget-icon {
-    display:none;
-  }
-  
-  
-  .goog-te-gadget-simple {
-      background-color: #ecebf0 !important;
-      border:0 !important;
-      font-size: 10pt;
-     font-weight:800;
-      display: inline-block;
-      padding:10px 10px !important;
-      cursor: pointer;
-      zoom: 1;
-  }
-  
-  .goog-te-gadget-simple  span {
-     color:#3e3065 !important;
-  
-  }
-  .goog-te-banner-frame.skiptranslate {
-    display: none !important;
-    } 
-body {
-    top: 0px !important; 
-    }
-    .goog-te-banner-frame.skiptranslate, .goog-te-gadget-icon {
-        display: none !important;
-    }
-    body {
-        top: 0px !important;
-    }
-    .goog-tooltip {
-        display: none !important;
-    }
-    .goog-tooltip:hover {
-        display: none !important;
-    }
-    .goog-text-highlight {
-        background-color: transparent !important;
-        border: none !important;
-        box-shadow: none !important;
-    } */
+
+/* .cards{
+    max-width: 90vw;;
+} */
+/* .head{
+    background-color: rgba(0, 44, 72, 0.676) ;
+} */
 /* blue (0,95,154) */
 /* turq (66,191,171)  */
-/* #google_translate_element select{
-    background-color:#f6edfd;
-    color:#383ffa;
-    border: none;
-    border-radius:3px;
-    padding:6px 8px
-  }
-
-  .goog-te-banner-frame{
-    display:none !important;
-    }
-
-    .goog-logo-link{
-        display:none !important;
-       }
-     .goog-te-gadget{
-      color:transparent!important;
-      }
-
-      #goog-gt-tt, .goog-te-balloon-frame
-      {
-      display: none !important;
-      }
-      .goog-text-highlight 
-      { 
-      background: none !important;
-      box-shadow: none !important;
-      } */

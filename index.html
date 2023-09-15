@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+<script>
+    Weglot.initialize({
+        api_key: 'wg_792ecbf4857a4ce362f837211a24a5331'
+    });
+</script>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -51,35 +57,35 @@
         >
         <ul class="navbar-nav d-flex justify-content-around w-50">
           <li class="nav-item">
-            <a class="nav-link text-light" aria-current="page" href="#home"
+            <a class="nav-link text-light" aria-current="page" href="#home" id="naven1"
             >Home</a
-          >
+          > 
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#about-us">About Us </a>
+            <a class="nav-link text-light" href="#about-us" id="naven2">About Us </a>
 
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#ps">Products & Services</a>
+            <a class="nav-link text-light" href="#ps" id="naven3">Products & Services</a>
 
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" aria-disabled="true" href="#contact"
+            <a class="nav-link text-light" aria-disabled="true" href="#contact" id="naven4"
             >Contact</a>
           </li>
-          <li class="nav-item dropdown ">
+          <!-- <li class="nav-item dropdown ">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <img src="./imgs/icons/languages(1).png" style="max-height: 5vh;" alt="">
             </a>
             <ul class="dropdown-menu dropdown-menu-start">
               <li><a class="dropdown-item" href="#">Language</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#" id="es">Español</a></li>
-              <li><a class="dropdown-item" href="#" id="en">English</a></li>
+              <li><a class="dropdown-item" href="#" id="es" translate="no">Español</a></li>
+              <li><a class="dropdown-item" href="#" id="en" translate="no">English</a></li>
             </ul>
   
 
-          </li>
+          </li> -->
 
         </ul >
           
@@ -100,9 +106,7 @@
         <p class="text-light fw-lighter text-center eng" id="engli" translate="yes">
           All in One Place
         </p>
-        <p class="text-light fw-lighter text-center es d-none" id="espa" translate="yes">
-          Todo en un solo lugar
-        </p>
+    
       </div>
     </section>
     <section
@@ -111,12 +115,10 @@
     >
       <div class="row d-flex flex-column justify-content-center">
         <div class="col col-12 text-center">
-          <h2 class="text-center fw-bold titles p-3" translate="yes" id="engli">
+          <h2 class="text-center fw-bold titles p-3" translate="yes" id="engli0">
             About Us
           </h2>
-          <h2 class="text-center fw-bold titles p-3 d-none" translate="yes" id="espa">
-            Sobre Nosotros
-          </h2>
+        
         </div>
         <div class="col d-flex flex-lg-column flex-row justify-content-center">
           <div class="col d-flex flex-wrap abou justify-content-center">
@@ -125,42 +127,26 @@
               doctors, health-care professionals and medical institutions since
               2023.
             </p>
-            <p class="fw-lighter m-1 es d-none" translate="yes" id="espa1" >
-              El equipo de Orthocare ha estado trabajando con neurocirujanos, ortopédicos
-              médicos, profesionales de la salud e instituciones médicas desde
-              2023.
-            </p>
+      
             <p class="fw-lighter mb-3 m-1 eng" id="engli2" translate="yes">
               We partnered with some of the top companies in order to provide
               surgeons, access to the best surgical equipment including:
               implants for trauma, spine, reconstruction neurosurgery,
               maxillofacial and biologics.
             </p>
-            <p class="fw-lighter mb-3 m-1 es d-none" id="espa2" translate="yes">
-              Nos asociamos con algunas de las principales empresas para proporcionar
-              cirujanos, acceso al mejor equipo quirúrgico que incluye:
-              implantes para traumatología, columna vertebral, neurocirugía reconstructiva,
-              maxilofaciales y biológicos.
-            </p>
+    
 
             <p class="fw-lighter m-1 eng" id="engli3" translate="yes">
               We also provide technician services for local surgeons, billing
               and coding services for orthopedic surgery and provide an
               institutional support for medical billing.
             </p>
-            <p class="fw-lighter m-1 es d-none" id="espa3" translate="yes">
-              También brindamos servicios técnicos para cirujanos locales, facturación
-              y servicios de codificación para cirugía ortopédica y proporcionar una
-              Apoyo institucional para facturación médica.
-            </p>
+       
             <p class="fw-lighter m-1 eng" id="engli4" translate="yes">
               We look forward to a bright future and to provide the best quality
               of service to our clients and partners in Puerto Rico.
             </p>
-            <p class="fw-lighter m-1 es d-none" id="espa4" translate="yes">
-              Esperamos un futuro brillante y ofrecer la mejor calidad.
-              de servicio a nuestros clientes y socios en Puerto Rico.
-            </p>
+       
           </div>
         </div>
 
@@ -187,13 +173,54 @@
       </div>
     </section>
     <section id="ps" class="text-center text-light row d-flex flex-column">
-      <div class="col mt-4 mb-4">
+      <div class=" mt-4 mb-4">
         <h2 class="fw-bolder eng" translate="yes" id="engli5">Products & Services</h2>
-        <h2 class="fw-bolder es d-none" translate="yes" id="espa5" >Productos & Servicios</h2>
       </div>
-      <div class="col">
-        <p class="h-100 w-100 text-secondary eng" id="engli10" translate="yes">Coming Soon</p>
-        <p class="h-100 w-100 text-secondary es d-none" id="espa10" translate="yes">Proximamente</p>
+      <div class="col container">
+        <!-- <p class="h-100 w-100 text-secondary eng col" id="engli10" translate="yes">Coming Soon</p> -->
+        <!-- <p class="h-100 w-100 text-secondary es d-none" id="espa10" translate="yes">Proximamente</p> -->
+        <div class="col d-flex flex-row  h-50 fw-lighter">
+          <div class="col d-flex flex-column pands ">
+            <div class="col d-flex justify-content-center align-items-center ">Spine</div>
+            <div class="col"><img src="./imgs/icons/chiropractic.png" style="height: 6rem;" alt=""></div>
+          </div>
+          <div class="col d-flex flex-column pands">
+            <div class="col d-flex justify-content-center align-items-center">Trauma</div>
+            <div class="col"><img src="./imgs/icons/broken-bone.png" style="height: 6rem;" alt=""></div>
+          </div>
+          <div class="col d-flex flex-column pands">
+            <div class="col d-flex justify-content-center align-items-center">Reconstruction</div>
+            <div class="col"><img src="./imgs/icons/fixed.png" style="height: 6rem;" alt=""></div>
+          </div>
+          <div class="col d-flex flex-column pands">
+            <div class="col d-flex justify-content-center align-items-center">Sports</div>
+            <div class="col"><img src="./imgs/icons/running(1).png" style="height: 6rem;" alt=""></div>
+          </div>
+          <div class="col d-flex flex-column pands">
+            <div class="col  d-flex justify-content-center align-items-center">Biologics</div>
+            <div class="col"><img src="./imgs/icons/dna-structure(1).png" style="height: 6rem;" alt=""></div>
+          </div>
+        </div>
+        <div class="col d-flex flex-row h-50 fw-lighter">
+          <div class="col d-flex flex-column pands">
+            <div class="col  d-flex justify-content-center align-items-center">Surgery Technician</div>
+            <div class="col"><img src="./imgs/icons/hospital(1).png" style="height: 6rem;" alt=""></div>
+          </div>
+          <div class="col d-flex flex-column pands">
+            <div class="col d-flex justify-content-center align-items-center">Orthopedic Surgery Coding and Billing</div>
+            <div class="col"><img src="./imgs/icons/bill.png" style="height: 6rem;" alt=""></div>
+          </div>
+          <div class="col d-flex flex-column pands">
+            <div class="col d-flex justify-content-center align-items-center">Institucional Medical Insurance Billing </div>
+            <div class="col"><img src="./imgs/icons/Group 1(2).png" style="height: 6rem;" alt=""></div>
+          </div>
+          <div class="col d-flex flex-column pands">
+            <div class="col d-flex justify-content-center align-items-center">Medical Insurance</div>
+            <div class="col"><img src="./imgs/icons/health-insurance.png" style="height: 6rem;" alt=""></div>
+            
+          </div>
+     
+        </div>
       </div>
     </section>
     <section id="contact" class="row d-flex flex-md-row flex-column">
@@ -205,9 +232,7 @@
             <h2 class="text-light fw-bolder eng" id="engli6" translate="yes">
               Send Us A Message
             </h2>
-            <h2 class="text-light fw-bolder es d-none " id="espa6" translate="yes">
-              Comunicate con nosotros
-            </h2>
+          
           </div>
           <!-- <div class="col text-center">
             <form action="">
@@ -233,7 +258,6 @@
 
           <div class="col text-body-tertiary">
             <h5 translate="yes" id="engli7">Coming Soon</h5>
-            <h5 translate="yes" id="espa7" class="d-none">Proximamente</h5>
           </div>
         </div>
       </div>
@@ -250,12 +274,12 @@
           </div>
           <div class="informa">
             <p translate="yes" id="engli8">Address</p>
-            <p translate="yes" id="espa8" class="d-none">Direccion</p>
+            <p translate="yes" id="espa8" class="d-none">Dirección</p>
             <p>Urb L’Antigua La 3 Vía Mallorca Trujillo Alto 00976 PR</p>
           </div>
           <div class="informa">
             <p id="engli9">Phone</p>
-            <p id="espa9" class="d-none">Telefono</p>
+            <p id="espa9" class="d-none">Teléfono</p>
             <p>1-787-903-7470</p>
           </div>
         </div>
@@ -284,67 +308,69 @@
 var dropdownMenu = document.querySelector('.dropdown-menu');
 
 // Add a click event listener to the dropdown menu
-dropdownMenu.addEventListener('click', function (event) {
+// dropdownMenu.addEventListener('click', function (event) {
   // Check if the clicked element is a dropdown item
-  if (event.target.classList.contains('dropdown-item')) {
-    // Get the ID of the clicked item
-    var itemId = event.target.id;
-    console.log('Clicked item ID:', itemId);
-    if(itemId == 'es'){
-      console.log("ESPANOL");
-      document.getElementById("espa").classList.remove("d-none");
-      document.getElementById("espa1").classList.remove("d-none");
-      document.getElementById("espa2").classList.remove("d-none");
-      document.getElementById("espa3").classList.remove("d-none");
-      document.getElementById("espa4").classList.remove("d-none");
-      document.getElementById("espa5").classList.remove("d-none");
-      document.getElementById("espa6").classList.remove("d-none");
-      document.getElementById("espa7").classList.remove("d-none");
-      document.getElementById("espa8").classList.remove("d-none");
-      document.getElementById("espa9").classList.remove("d-none");
-      document.getElementById("espa10").classList.remove("d-none");
+  // if (event.target.classList.contains('dropdown-item')) {
+  //   // Get the ID of the clicked item
+  //   var itemId = event.target.id;
+  //   console.log('Clicked item ID:', itemId);
+  //   if(itemId == 'es'){
+  //     console.log("ESPANOL");
+  //     document.getElementById("espa").classList.remove("d-none");
+  //     document.getElementById("espa1").classList.remove("d-none");
+  //     document.getElementById("espa2").classList.remove("d-none");
+  //     document.getElementById("espa3").classList.remove("d-none");
+  //     document.getElementById("espa4").classList.remove("d-none");
+  //     document.getElementById("espa5").classList.remove("d-none");
+  //     document.getElementById("espa6").classList.remove("d-none");
+  //     document.getElementById("espa7").classList.remove("d-none");
+  //     document.getElementById("espa8").classList.remove("d-none");
+  //     document.getElementById("espa9").classList.remove("d-none");
+  //     document.getElementById("espa10").classList.remove("d-none");
 
-      document.getElementById("engli").classList.add("d-none");
-      document.getElementById("engli1").classList.add("d-none");
-      document.getElementById("engli2").classList.add("d-none");
-      document.getElementById("engli3").classList.add("d-none");
-      document.getElementById("engli4").classList.add("d-none");
-      document.getElementById("engli5").classList.add("d-none");
-      document.getElementById("engli6").classList.add("d-none");
-      document.getElementById("engli7").classList.add("d-none");
-      document.getElementById("engli8").classList.add("d-none");
-      document.getElementById("engli9").classList.add("d-none");
-      document.getElementById("engli10").classList.add("d-none");
+  //     document.getElementById("engli").classList.add("d-none");
+  //     document.getElementById("engli1").classList.add("d-none");
+  //     document.getElementById("engli2").classList.add("d-none");
+  //     document.getElementById("engli3").classList.add("d-none");
+  //     document.getElementById("engli4").classList.add("d-none");
+  //     document.getElementById("engli5").classList.add("d-none");
+  //     document.getElementById("engli6").classList.add("d-none");
+  //     document.getElementById("engli7").classList.add("d-none");
+  //     document.getElementById("engli8").classList.add("d-none");
+  //     document.getElementById("engli9").classList.add("d-none");
+  //     document.getElementById("engli10").classList.add("d-none");
 
-    }
-    else if(itemId == 'en'){
-      console.log("ENGLISH");
-      document.getElementById("engli").classList.remove("d-none");
-      document.getElementById("engli1").classList.remove("d-none");
-      document.getElementById("engli2").classList.remove("d-none");
-      document.getElementById("engli3").classList.remove("d-none");
-      document.getElementById("engli4").classList.remove("d-none");
-      document.getElementById("engli5").classList.remove("d-none");
-      document.getElementById("engli6").classList.remove("d-none");
-      document.getElementById("engli7").classList.remove("d-none");
-      document.getElementById("engli8").classList.remove("d-none");
-      document.getElementById("engli9").classList.remove("d-none");
-      document.getElementById("engli10").classList.remove("d-none");
+  //   }
+  //   else if(itemId == 'en'){
+  //     console.log("ENGLISH");
+  //     document.getElementById("engli").classList.remove("d-none");
 
-      document.getElementById("espa").classList.add("d-none");
-      document.getElementById("espa1").classList.add("d-none");
-      document.getElementById("espa2").classList.add("d-none");
-      document.getElementById("espa3").classList.add("d-none");
-      document.getElementById("espa4").classList.add("d-none");
-      document.getElementById("espa5").classList.add("d-none");
-      document.getElementById("espa6").classList.add("d-none");
-      document.getElementById("espa7").classList.add("d-none");
-      document.getElementById("espa8").classList.add("d-none");
-      document.getElementById("espa9").classList.add("d-none");
-      document.getElementById("espa10").classList.add("d-none");
-    }
-  }
-});
+  //     document.getElementById("engli1").classList.remove("d-none");
+  //     document.getElementById("engli2").classList.remove("d-none");
+  //     document.getElementById("engli3").classList.remove("d-none");
+  //     document.getElementById("engli4").classList.remove("d-none");
+  //     document.getElementById("engli5").classList.remove("d-none");
+  //     document.getElementById("engli6").classList.remove("d-none");
+  //     document.getElementById("engli7").classList.remove("d-none");
+  //     document.getElementById("engli8").classList.remove("d-none");
+  //     document.getElementById("engli9").classList.remove("d-none");
+  //     document.getElementById("engli10").classList.remove("d-none");
+
+  //     document.getElementById("espa").classList.add("d-none");
+  //     document.getElementById("espa1").classList.add("d-none");
+  //     document.getElementById("espa2").classList.add("d-none");
+  //     document.getElementById("espa3").classList.add("d-none");
+  //     document.getElementById("espa4").classList.add("d-none");
+  //     document.getElementById("espa5").classList.add("d-none");
+  //     document.getElementById("espa6").classList.add("d-none");
+  //     document.getElementById("espa7").classList.add("d-none");
+  //     document.getElementById("espa8").classList.add("d-none");
+  //     document.getElementById("espa9").classList.add("d-none");
+  //     document.getElementById("espa10").classList.add("d-none");
+  //   }
+  // }
+// });
+
 
   </script>
   

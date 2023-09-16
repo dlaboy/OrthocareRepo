@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
 <script>
     Weglot.initialize({
         api_key: 'wg_792ecbf4857a4ce362f837211a24a5331'
     });
-</script>
+</script> -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -36,6 +36,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body class="bg-light">
+ <div class="row lang">
+  <div class="col d-flex flex-row">
+    <button id="lang-tog" class="language-buton btn p-3 fw-bold rounded-start-3 rounded-end-0" onclick="LangClick"><div id="text" class="text">Language</div> <div id="x" class="x d-none">X</div></button>
+    <div id="lang-dis" class="col d-none d-flex flex-row    ">
+      <div class="col lang-item d-flex align-self-center justify-content-center p-2">
+        <h7 class="fw-bold" >English</h7>
+
+      </div>
+      <div class="col lang-item d-flex align-self-center justify-content-center p-2">
+        <h7 class="fw-bold" >Español</h7>
+      </div>
+    </div>
+  </div>
+ </div>
     <nav class="nav navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <img class="logo-nav" src="./imgs/logos/logoo8.png" alt="" />
@@ -156,7 +170,7 @@
       <div class=" mt-4 mb-4">
         <h2 class="fw-bolder eng" translate="yes" id="engli5">Products & Services</h2>
       </div>
-      <div class="col container cards">
+      <div class="col container cards w-75">
 
         <div class="col d-flex flex-row  h-50 fw-lighter">
           <div class="col d-flex flex-column pands  head">
@@ -203,9 +217,9 @@
       </div>
     </section>
     <section id="contact" class="row d-flex flex-md-row flex-column">
-      <div class="col form d-flex justify-content-center align-items-center">
+      <div class="col form d-flex justify-content-center align-items-center ">
         <div
-          class="col real-form d-flex justify-content-center align-items-center flex-column"
+          class="col real-form d-flex justify-content-center align-items-center flex-column p-4 rounded-4"
         >
           <div class="col mt-4 mb-4">
             <h2 class="text-light fw-bolder eng" id="engli6" translate="yes">
@@ -214,10 +228,22 @@
           
           </div>
 
+          <form action="" >
+            <div class="col text-body-tertiary d-flex flex-column w-100 justify-content-center align-items-center">
+              <!-- <h5 translate="yes" id="engli7">Coming Soon</h5> -->
+              <input type="text" class="bg-secondary-subtle border-0 rounded-3 w-75 p-1" placeholder="Topic">
+              <input type="text" class="bg-secondary-subtle border-0 rounded-3 w-75 mt-2 p-1" placeholder="Name">
+              <div class="col input-group d-flex flex-row justify-content-center align-items-center">
+                <input type="text" class=" bg-secondary-subtle border-0 rounded-3 input-group-fix mt-2 p-1" placeholder="Email">
+                <input type="text" class=" bg-secondary-subtle border-0 rounded-3 input-group-fix ms-1 mt-2 p-1" placeholder="Phone">
 
-          <div class="col text-body-tertiary">
-            <h5 translate="yes" id="engli7">Coming Soon</h5>
-          </div>
+              </div>
+              <textarea type="text" class="bg-secondary-subtle border-0 rounded-3 w-75 mt-2 p-1" placeholder="Message" rows="5" cols="5"></textarea>
+            </div>
+            <div class="col w-100 d-flex justify-content-center align-items-center mt-2 mb-2">
+                <button type="submit" class="btn send-button w-75">Send</button>
+            </div>
+          </form>
         </div>
       </div>
       <div
@@ -245,7 +271,26 @@
       </div>
     </section>
   </body>
+  <script>
 
+    function LangClick(){
+      
+      if(document.getElementById("lang-dis").classList.contains("d-none")){
+        document.getElementById("lang-dis").classList.remove("d-none");
+        document.getElementById("x").classList.remove("d-none");
+        document.getElementById("text").classList.add("d-none");
+
+      }
+      else{
+        document.getElementById("x").classList.add("d-none");
+        document.getElementById("lang-dis").classList.add("d-none");
+        document.getElementById("text").classList.remove("d-none");
+
+        
+      }
+    }
+    document.getElementById("lang-tog").addEventListener('click',LangClick);
+  </script>
 
   
   <script>

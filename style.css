@@ -130,8 +130,19 @@ p{
 .abou{
     max-height: 80vh;
 }
+.pands{
+    max-width: 250px;
+    height: 100%;
+    /* width: 100%; */
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    position: relative;
+    
+    
+}
 .pands:hover{
     background-color: rgba(242, 242, 242, 0.302);
+    
     position: relative;
     top: -20px;
     transition: 0.2s ease-in all;
@@ -140,7 +151,58 @@ p{
     /* border: solid;
     /* border-style: groove; */
     
+    
 }
+
+/* *{
+    
+} */
+
+.pands-flipped{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+
+    /* transition: transform .8s; */
+    
+}
+
+.pands-wrapper{
+    max-width: 90vw;
+}
+.pands-back{
+    transform: rotateY(180deg);
+    height: 100%;
+    
+    max-width: 250px;
+    background-color: rgba(242, 242, 242, 0.302);
+    overflow-y: auto;
+    font-size: .9rem;
+
+   
+
+
+}
+
+.pands-front{
+    height: 100%;
+    backface-visibility: hidden; 
+
+}
+.pands-back{
+    backface-visibility: hidden; 
+
+}
+.pands-back,.pands-front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
 .send-button{
     background-color: rgb(53, 163, 145) ;
     color: white;
@@ -157,9 +219,9 @@ p{
     width: 37%;
 }
 
-/* .cards{
-    max-width: 90vw;;
-} */
+.cards{
+    max-width: 90vw;
+}
 /* .head{
     background-color: rgba(0, 44, 72, 0.676) ;
 } */

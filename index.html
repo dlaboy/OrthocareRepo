@@ -288,20 +288,21 @@
           
           </div>
 
-          <form action="" >
+          <form action="https://formsubmit.co/diego.laboy1@upr.edu" method="POST" />
             <div class="col text-body-tertiary d-flex flex-column w-100 justify-content-center align-items-center">
               <!-- <h5 translate="yes" id="engli7">Coming Soon</h5> -->
-              <input type="text" class="bg-secondary-subtle border-0 rounded-3 w-75 p-1" placeholder="Topic">
-              <input type="text" class="bg-secondary-subtle border-0 rounded-3 w-75 mt-2 p-1" placeholder="Name">
+              <input type="text" class="bg-secondary-subtle border-0 rounded-3 w-75 p-1" placeholder="Topic" name="_subject">
+              <input type="hidden" name="_cc" value="laboydiego23@gmail.com">
+              <input type="text" class="bg-secondary-subtle border-0 rounded-3 w-75 mt-2 p-1" placeholder="Name" name="name">
               <div class="col input-group d-flex flex-row justify-content-center align-items-center">
-                <input type="text" class=" bg-secondary-subtle border-0 rounded-3 input-group-fix mt-2 p-1" placeholder="Email">
-                <input type="text" class=" bg-secondary-subtle border-0 rounded-3 input-group-fix ms-1 mt-2 p-1" placeholder="Phone">
+                <input type="text" class=" bg-secondary-subtle border-0 rounded-3 input-group-fix mt-2 p-1" placeholder="Email" name="email">
+                <input type="text" class=" bg-secondary-subtle border-0 rounded-3 input-group-fix ms-1 mt-2 p-1" placeholder="Phone" name="phone">
 
               </div>
-              <textarea type="text" class="bg-secondary-subtle border-0 rounded-3 w-75 mt-2 p-1" placeholder="Message" rows="5" cols="5"></textarea>
+              <textarea type="text" class="bg-secondary-subtle border-0 rounded-3 w-75 mt-2 p-1" placeholder="Message" rows="5" cols="5" name="message"></textarea>
             </div>
             <div class="col w-100 d-flex justify-content-center align-items-center mt-2 mb-2">
-                <button type="submit" class="btn send-button w-75">Send</button>
+                <input type="submit" class="btn send-button w-75" placeholder="Send"/>
             </div>
           </form>
         </div>

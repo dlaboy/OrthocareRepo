@@ -167,10 +167,32 @@
       </div>
     </section>
     <section id="ps" class="text-center text-light row d-flex flex-column">
-      <div class=" mt-4 mb-4">
-        <h2 class="fw-bolder eng" translate="yes" id="engli5">Products & Services</h2>
+      <div class="products">
+        <div id="products-header" class=" products-header p-3">
+          <h2 class="fw-bolder eng" translate="yes" id="engli5">Products</h2>
+        </div>
+        <div class="d-none products-section">
+          <h3>Spine</h3>
+          <h3>Sports</h3>
+          <h3>Hip</h3>
+          <h3>Knee</h3>
+          <h3>Trauma</h3>
+          <h3>Wound Care</h3>
+        </div>
       </div>
-      <div class="col container cards w-100">
+      <div class="services">
+        <div id="services-header" class=" services-header p-3">
+          <h2 class="fw-bolder eng" translate="yes" id="engli5">Services</h2>
+        </div>
+        <div class="d-none services-section">
+          <h3>Surgery Technician</h3>
+          <h3>Orthopedic Surgery Coding and Billing</h3>
+        </div>
+      </div>
+
+
+      </div>
+      <!-- <div class="col container cards w-100">
 
         <div class="col d-flex flex-row  h-50 fw-lighter pands-wrapper">
           <div class="col d-flex flex-column pands  ">
@@ -219,7 +241,8 @@
               <a href="#" class="text-decoration-none text-dark rounded-0" style="font-size: .9rem;">Click for Info</a>
             </button>
           </div>
-      </div>   <div class="col d-flex flex-column pands  ">
+      </div>    -->
+      <!-- <div class="col d-flex flex-column pands  ">
 
         <div class="pands-front col d-flex flex-column">
 
@@ -234,7 +257,8 @@
             <a href="#" class="text-decoration-none text-dark rounded-0" style="font-size: .9rem;">Click for Info</a>
           </button>
         </div>
-    </div>   <div class="col d-flex flex-column pands  ">
+    </div>    -->
+    <!-- <div class="col d-flex flex-column pands  ">
 
       <div class="pands-front col d-flex flex-column">
 
@@ -249,12 +273,12 @@
           <a href="#" class="text-decoration-none text-dark rounded-0" style="font-size: .9rem;">Click for Info</a>
         </button>
       </div>
-  </div>  
+  </div>   -->
          
           
          
-        </div>
-        <div class="col d-flex flex-row h-50 fw-lighter justify-content-center align-items-center ">
+        <!-- </div> -->
+        <!-- <div class="col d-flex flex-row h-50 fw-lighter justify-content-center align-items-center ">
           <div class="col d-flex flex-column pands h-100">
             <div class="col  d-flex justify-content-center align-items-center">Surgery Technician</div>
             <div class="col"><img src="./imgs/icons/hospital(1).png" style="height: 6rem;" alt=""></div>
@@ -273,7 +297,7 @@
             
           </div>
      
-        </div>
+        </div> -->
       </div>
     </section>
     <section id="contact" class="row d-flex flex-md-row flex-column">
@@ -333,6 +357,32 @@
     </section>
   </body>
   <script>
+    var ph = document.querySelectorAll('.products-header');
+
+    [...ph].forEach((product_header)=>{
+      product_header.addEventListener('click',function(){
+        var ps = document.querySelectorAll('.products-section');
+        
+        [...ps].forEach((product_section)=>{
+          product_section.classList.toggle('d-none');
+        })
+      })
+    });
+
+    var sh = document.querySelectorAll('.services-header');
+
+    [...sh].forEach((services_header)=>{
+      services_header.addEventListener('click',function(){
+        var ss = document.querySelectorAll('.services-section');
+        
+        [...ss].forEach((services_section)=>{
+          services_section.classList.toggle('d-none');
+        })
+      })
+    });
+
+
+
     var pands = document.querySelectorAll('.pands');
 
     [...pands].forEach((pand)=>{

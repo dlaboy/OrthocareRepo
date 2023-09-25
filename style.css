@@ -153,6 +153,14 @@ p{
     
     
 }
+.products-header:hover, .services-header:hover{
+    background-color: rgba(242, 242, 242, 0.302);
+    transition: 0.2s ease-in all;
+    cursor: pointer;
+
+
+
+}
 
 /* *{
     
@@ -197,6 +205,8 @@ p{
     height: 100%;
     width: 100%;
 }
+
+
 
 
 

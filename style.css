@@ -153,13 +153,23 @@ p{
     
     
 }
-.products-header:hover, .services-header:hover{
+.prod:hover{
     background-color: rgba(242, 242, 242, 0.302);
     transition: 0.2s ease-in all;
+    position: relative;
+    top: -10px;
+     box-shadow: 0px 10px  rgba(0, 44, 72, 0.566);
     cursor: pointer;
 
 
 
+}
+.pro{
+    height: 75px;
+}
+.products-subsection{
+    background-color: rgb(99, 132, 152);
+    box-shadow: inset 0 0 10px #202020;
 }
 
 /* *{

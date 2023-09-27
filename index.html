@@ -171,22 +171,74 @@
         <div id="products-header" class=" products-header p-3">
           <h2 class="fw-bolder eng" translate="yes" id="engli5">Products</h2>
         </div>
-        <div class="d-none products-section">
-          <h3>Spine</h3>
-          <h3>Sports</h3>
-          <h3>Hip</h3>
-          <h3>Knee</h3>
-          <h3>Trauma</h3>
-          <h3>Wound Care</h3>
+        <div class="mt-3 mb-3  products-section d-flex flex-row w-100 justify-content-around row ">
+          <div  class="spine prod col pt-3 pb-3 ">
+            <img src="./imgs/icons/chiropractic.png" alt="" class="pro">
+            <h3 class="fw-light">Spine </h3>
+          </div>
+          <div class="sports prod col pt-3 pb-3">
+            <img src="./imgs/icons/running(1).png" alt="" class="pro">
+            <h3 class="fw-light">Sports</h3>
+          </div>
+          <div class="hip prod col pt-3 pb-3">
+            <img src="./imgs/icons/pelvis.png" alt="" class="pro">
+            <h3 class="fw-light">Hip</h3>
+          </div>
+          <div class="knee prod col pt-3 pb-3">
+            <img src="./imgs/icons/knee(1).png" alt="" class="pro">
+            <h3 class="fw-light">Knee</h3>
+          </div>
+          <div class="trauma prod col pt-3 pb-3">
+            <img src="./imgs/icons/broken-bone.png" alt="" class="pro">
+            <h3 class="fw-light">Trauma</h3>
+          </div>
+          <div class="wound prod col pt-3 pb-3">
+            <img src="./imgs/icons/bandage.png" alt="" class="pro">
+
+            <h3 class="fw-light">Wound Care</h3>
+          </div>
+        </div>
+        <div class="products-subsection ">
+          <div class="spine-products d-none pt-3 pb-3">
+            <h3 class="fw-bold">Spine Products</h3>
+
+          </div>
+          <div class="sports-products d-none pt-3 pb-3">
+            <h3 class="fw-bold">Sports Products</h3>
+
+          </div>
+          <div class="hip-products d-none pt-3 pb-3">
+            <h3 class="fw-bold">Hip Products</h3>
+
+          </div>
+          <div class="knee-products d-none pt-3 pb-3">
+            <h3 class="fw-bold">Knee Products</h3>
+
+          </div>
+          <div class="trauma-products d-none pt-3 pb-3">
+            <h3 class="fw-bold">Trauma Products</h3>
+
+          </div>
+          <div class="wound-products d-none pt-3 pb-3">
+            <h3 class="fw-bold">Wound Products</h3>
+
+          </div>
         </div>
       </div>
       <div class="services">
         <div id="services-header" class=" services-header p-3">
           <h2 class="fw-bolder eng" translate="yes" id="engli5">Services</h2>
         </div>
-        <div class="d-none services-section">
-          <h3>Surgery Technician</h3>
-          <h3>Orthopedic Surgery Coding and Billing</h3>
+        <div class=" services-section d-flex flex-row justify-content-evenly row">
+          <div class="prod pt-3 pb-3 col">
+            <img src="./imgs/icons/hospital(1).png" alt="" class="pro">
+            <h3 class="fw-light">Surgery Technician</h3>
+          </div>
+          <div class="prod pt-3 pb-3 col">
+            <img src="./imgs/icons/bill.png" alt="" class="pro">
+
+            <h3 class="fw-light">Orthopedic Surgery <br> Coding and Billing</h3>
+          </div>
         </div>
       </div>
 
@@ -356,73 +408,8 @@
       </div>
     </section>
   </body>
-  <script>
-    var ph = document.querySelectorAll('.products-header');
-
-    [...ph].forEach((product_header)=>{
-      product_header.addEventListener('click',function(){
-        var ps = document.querySelectorAll('.products-section');
-        
-        [...ps].forEach((product_section)=>{
-          product_section.classList.toggle('d-none');
-        })
-      })
-    });
-
-    var sh = document.querySelectorAll('.services-header');
-
-    [...sh].forEach((services_header)=>{
-      services_header.addEventListener('click',function(){
-        var ss = document.querySelectorAll('.services-section');
-        
-        [...ss].forEach((services_section)=>{
-          services_section.classList.toggle('d-none');
-        })
-      })
-    });
+ <script src="./script.js"></script>
 
 
-
-    var pands = document.querySelectorAll('.pands');
-
-    [...pands].forEach((pand)=>{
-
-      pand.addEventListener('click',function(){
-        pand.classList.toggle('pands-flipped');
-      })
-    })
-
-    function LangClick(){
-      
-      if(document.getElementById("lang-dis").classList.contains("d-none")){
-        document.getElementById("lang-dis").classList.remove("d-none");
-        document.getElementById("x").classList.remove("d-none");
-        document.getElementById("text").classList.add("d-none");
-
-      }
-      else{
-        document.getElementById("x").classList.add("d-none");
-        document.getElementById("lang-dis").classList.add("d-none");
-        document.getElementById("text").classList.remove("d-none");
-
-        
-      }
-    }
-    document.getElementById("lang-tog").addEventListener('click',LangClick);
-  </script>
-
-  
-  <script>
-    const navbar = document.querySelector(".nav");
-    const section = document.querySelector("section");
-
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > section.offsetTop) {
-        navbar.classList.add("sticky");
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    });
-  </script>
 
 </html>

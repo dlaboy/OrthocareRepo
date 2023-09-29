@@ -2,6 +2,9 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevent horizontal scrollbar when section content overflows */
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(255, 255, 255, 0.97);
+    
 }
 
 .lang{
@@ -44,21 +47,37 @@ body{
 }
 #home{
     padding-top: 10rem;
-    background-image: url(imgs/bac&cont/Untitled.png);
-    filter: brightness(120%);
-    height: 65vh;
-    max-height: 65vh;
+    /* background-image: url(imgs/bac&cont/Untitled.png); */
+    /* background: rgb(66,191,171); */
+    /* background: radial-gradient(circle, rgba(66,191,171,1) 3%, rgba(42,156,165,1) 14%, rgba(0,95,154,1) 48%, rgba(0,47,76,1) 96% ); */
+    /* filter: brightness(120%); */
+    background: linear-gradient(rgba(0, 44, 72, 0.849),transparent),url('./imgs/bac&cont/pexels-engin-akyurt-2678059.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 55vh;
+    max-height: 270px;
 }
 #about-us{
     height: 85vh;
+    margin-top: 2rem;
+    background-color: rgba(230, 234, 234, 0.653);
+    box-shadow: 12px 12px 2px 1px rgba(1, 1, 81, 0.2);
 
     
+}
+.see{
+    color: black;
+}
+.see:hover{
+    color: rgba(66,191,171);
+
 }
 #ps{
     background-image: url(imgs/bac&cont/Group\ 1\(1\).png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 100%;
+
 
 
 
@@ -85,8 +104,9 @@ body{
     flex: row;
 }
 .letras-home{
-    height: 15vh;
-    max-width: 90vw;
+    height: 4vh;
+    font-size: 4vh;
+    /* max-width: 90vw; */
 }
 .contact-logo{
     height: 40vh;
@@ -99,7 +119,9 @@ body{
     color: navy;
 }
 .about-images{
-    height: 50vh;
+    height: 75vh;
+    max-height: 400px;
+    max-width: 500px;
 
 }
 .form{
@@ -117,14 +139,15 @@ p{
 }
 .nav{
     
-    /* background: linear-gradient(rgba(7, 71, 111, 0.564), rgba(66,191,171)); */
-    background: linear-gradient(rgb(63, 180, 160),rgba(7, 71, 111, 0.564));
+    /* background: linear-gradient(rgba(7, 71, 111, 0.564), rgba(66,191,171));  */
+    background: linear-gradient(rgba(0, 44, 72, 0.849),rgba(190, 190, 190, 0));
 
     position: fixed;
     top: 0;
     width: 100%;
     /* Add other styles like height, padding, etc. */
     z-index: 100; /* Ensures the navbar appears above other content */
+    /* color: color-contrast(var(--primary-background) vs #fff, #000); */
    
 }
 .abou{
@@ -153,6 +176,7 @@ p{
     
     
 }
+
 .prod:hover{
     background-color: rgba(242, 242, 242, 0.302);
     transition: 0.2s ease-in all;
@@ -170,6 +194,9 @@ p{
 .products-subsection{
     background-color: rgb(99, 132, 152);
     box-shadow: inset 0 0 10px #202020;
+}
+.close-image{
+    height: 5vh;
 }
 
 /* *{

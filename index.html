@@ -26,6 +26,9 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./imgs/logos/logoo2.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap" rel="stylesheet">
 
     <!-- Scrits -->
     <script
@@ -35,7 +38,7 @@
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
-  <body class="bg-light">
+  <body class="">
  <div class="row lang">
   <div class="col d-flex flex-row">
     <button id="lang-tog" class="language-buton btn p-3 fw-bold rounded-start-3 rounded-end-0" onclick="LangClick"><div id="text" class="text">Language</div> <div id="x" class="x d-none">X</div></button>
@@ -51,8 +54,17 @@
   </div>
  </div>
     <nav class="nav navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <img class="logo-nav" src="./imgs/logos/logoo8.png" alt="" />
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex flex-lg-row flex-column justify-content-center align-items-center">
+          <img class="logo-nav" src="./imgs/logos/logoo8.png" alt="" />
+              <!-- <img
+            class="letras-home"
+            src="./imgs/logos/Rectangle 27(3).png"
+            alt=""
+          /> -->
+          <h1 class="letras-home text-light ms-1 d-lg-block d-none">ORTHOCARE</h1>
+
+        </div>
         <button
           class="navbar-toggler border-light"
           type="button"
@@ -98,39 +110,44 @@
     </nav>
     <section id="home" class="row">
       <div
-        class="mb-5 col d-flex flex-column justify-content-center align-items-center align-items-lg-end me-lg-5 container"
+        class="mb-5 col d-flex flex-column justify-content-center align-items-center align-items-lg-start me-lg-5 container ms-lg-5"
       >
-        <img
+        <!-- <img
           class="letras-home mb-5"
           src="./imgs/logos/Rectangle 27(3).png"
           alt=""
         />
-        <p class="text-light fw-lighter text-center eng" id="engli" translate="yes">
+        <p class="text-light fw-lighter eng" id="engli" translate="yes">
           All in One Place
         </p>
-    
+     -->
       </div>
     </section>
     <section
       id="about-us"
-      class="container d-flex flex-lg-row flex-column justify-content-center mb-5"
+      class="container d-flex flex-column justify-content-start mb-5"
     >
-      <div class="row d-flex flex-column justify-content-center">
-        <div class="col col-12 text-center">
+      <div class="row d-flex flex-column justify-content-start align-items-center">
+        <div class="col col-12 ">
           <h2 class="text-center fw-bold titles p-3" translate="yes" id="engli0">
             About Us
           </h2>
         
         </div>
-        <div class="col d-flex flex-lg-column flex-row justify-content-center">
-          <div class="col d-flex flex-wrap abou justify-content-center">
-            <p class="fw-lighter m-1 eng" translate="yes" id="engli1" >
+       
+
+  
+      </div>
+      <div class="row d-flex flex-row">
+        <div class="col d-flex flex-column  justify-content-center align-items-center ">
+          <div class="col d-flex flex-column abou justify-content-start align-items-center">
+            <p class="fw-light m-1 eng d-md-block d-none text-center" translate="yes" id="engli1" >
               Orthocare’s team has been working with neurosurgeons, orthopedic
               doctors, health-care professionals and medical institutions since
               2023.
             </p>
       
-            <p class="fw-lighter mb-3 m-1 eng" id="engli2" translate="yes">
+            <p class="fw-light mb-3 m-1 eng d-md-block d-none text-center" id="engli2" translate="yes">
               We partnered with some of the top companies in order to provide
               surgeons, access to the best surgical equipment including:
               implants for trauma, spine, reconstruction neurosurgery,
@@ -138,28 +155,36 @@
             </p>
     
 
-            <p class="fw-lighter m-1 eng" id="engli3" translate="yes">
+            <p class="fw-light mb-3 m-1 eng d-md-block d-none text-center" id="engli3" translate="yes">
               We also provide technician services for local surgeons, billing
               and coding services for orthopedic surgery and provide an
               institutional support for medical billing.
             </p>
        
-            <p class="fw-lighter m-1 eng" id="engli4" translate="yes">
+            <p class="fw-light m-1 eng d-md-block d-none text-center " id="engli4" translate="yes">
               We look forward to a bright future and to provide the best quality
               of service to our clients and partners in Puerto Rico.
             </p>
-       
+            <p class="fw-light m-1 eng d-md-none d-block  text-center">
+              Orthocare’s team has been working with neurosurgeons, orthopedic
+              doctors, health-care professionals and medical institutions since
+              2023.   We partnered with some of the top companies in order to provide
+              surgeons, access to the best surgical equipment including:
+              implants for trauma, spine, reconstruction neurosurgery,
+              maxillofacial and biologics.  We also provide technician services for local surgeons, billing
+              and coding services for orthopedic surgery and provide an
+              institutional support for medical billing. We look forward to a bright future and to provide the best quality
+              of service to our clients and partners in Puerto Rico.
           </div>
+          
+          <a href="#ps" class="see p-lg-3 p-0">See all Products & Services</a>
+          
         </div>
-
-  
-      </div>
-      <div class="row w-100">
         <div
-          class="d-xl-flex d-none col d-flex justify-content-center align-items-center"
+          class="d-xl-flex d-none col justify-content-center align-items-center "
         >
           <img
-            src="./imgs/bac&cont/ilustracion-concepto-ortopedico_114360-8807.jpg"
+            src="./imgs/bac&cont/ezgif.com-webp-to-jpg.jpg"
             alt=""
             class="about-images rounded-2"
           />
@@ -168,7 +193,7 @@
     </section>
     <section id="ps" class="text-center text-light row d-flex flex-column">
       <div class="products">
-        <div id="products-header" class=" products-header p-3">
+        <div id="products-header" class=" products-header p-xl-5 p-3">
           <h2 class="fw-bolder eng" translate="yes" id="engli5">Products</h2>
         </div>
         <div class="mt-3 mb-3  products-section d-flex flex-row w-100 justify-content-around row ">
@@ -198,9 +223,10 @@
             <h3 class="fw-light">Wound Care</h3>
           </div>
         </div>
-        <div class="products-subsection ">
-          <div class="spine-products d-none pt-3 pb-3">
+        <div class="products-subsection d-flex flex-column">
+          <div class="spine-products d-none pt-3 pb-3 ">
             <h3 class="fw-bold">Spine Products</h3>
+            <div class="close tex-center w-100 "><p class="text-decoration-underline">Close</p></div>
 
           </div>
           <div class="sports-products d-none pt-3 pb-3">
@@ -226,7 +252,7 @@
         </div>
       </div>
       <div class="services">
-        <div id="services-header" class=" services-header p-3">
+        <div id="services-header" class=" services-header  p-xl-5  p-3">
           <h2 class="fw-bolder eng" translate="yes" id="engli5">Services</h2>
         </div>
         <div class=" services-section d-flex flex-row justify-content-evenly row">

@@ -32,6 +32,7 @@ body{
 }
 .lang-item{
     max-width: 7.5vw;
+    cursor: pointer;
 
 }
 .lang-item:hover{
@@ -43,7 +44,7 @@ body{
 }
 
 .logo-nav{
-    height: 10vh;
+    height: 13vh;
 }
 #home{
     padding-top: 10rem;
@@ -51,11 +52,11 @@ body{
     /* background: rgb(66,191,171); */
     /* background: radial-gradient(circle, rgba(66,191,171,1) 3%, rgba(42,156,165,1) 14%, rgba(0,95,154,1) 48%, rgba(0,47,76,1) 96% ); */
     /* filter: brightness(120%); */
-    background: linear-gradient(rgba(0, 44, 72, 0.849),transparent),url('./imgs/bac&cont/pexels-engin-akyurt-2678059.jpg');
+    background: linear-gradient(rgb(0, 44, 72),transparent),url('./imgs/bac&cont/pexels-engin-akyurt-2678059.jpg');
     background-size: cover;
     background-position: center;
-    height: 55vh;
-    max-height: 270px;
+    height: 95vh;
+    /* max-height: 400px; */
 }
 #about-us{
     height: 85vh;
@@ -67,6 +68,26 @@ body{
 }
 .see{
     color: black;
+}
+.life{
+    font-family: 'Dela Gothic One', cursive;
+    color:white;
+    font-size: large;
+}
+.contact-life{
+    font-family: 'Dela Gothic One', cursive;
+    color: rgba(66,191,171);
+    position: relative;
+    bottom: -18px;
+
+}
+.contact-title{
+/* blue (0,95,154) */
+    color: rgba(0,95,154)  ;
+    font-weight: bolder;
+    font-size: 2rem;
+
+
 }
 .see:hover{
     color: rgba(66,191,171);
@@ -81,6 +102,19 @@ body{
 
 
 
+}
+.more{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-color: white;
+    /* border-style: solid; */
+
+}
+.more:hover{
+    background-color: rgb(212, 213, 213);
+    transition: all ease-in .2s;
+    color: navy;
+    
 }
 #contact{
     background-image: url(imgs/bac&cont/escritorio-vacio-consultorio-medico-computadora-e-instrumentos-medicos-nadie-gabinete-utiliza-cita-consulta-visita-control-donde-medico-trata-pacientes-enfermedades_482257-41824.jpg);
@@ -104,8 +138,8 @@ body{
     flex: row;
 }
 .letras-home{
-    height: 4vh;
-    font-size: 4vh;
+    height: 15vh;
+    font-size: 15vh;
     /* max-width: 90vw; */
 }
 .contact-logo{
@@ -128,10 +162,11 @@ body{
     height: 90vh;
 }
 .real-form{
-    background-color: rgba(3, 74, 118, 0.567);
+    background-color: rgba(2, 55, 87, 0.567);
     max-width: 75%;
     
 }
+
 p{
     font-size: clamp(1rem, 1.5vw, 1.1rem);
     
@@ -191,12 +226,20 @@ p{
 .pro{
     height: 75px;
 }
-.products-subsection{
+.products-subsection, .services-subsection{
     background-color: rgb(99, 132, 152);
     box-shadow: inset 0 0 10px #202020;
 }
 .close-image{
     height: 5vh;
+}
+.close{
+    color: rgba(255, 255, 255, 0.484);
+}
+.close:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
 }
 
 /* *{

@@ -236,10 +236,16 @@ p{
 .close{
     color: rgba(255, 255, 255, 0.484);
 }
+.coming{
+    color: rgba(255, 255, 255, 0.484);
+}
 .close:hover{
     color: rgb(255, 255, 255);
     cursor: pointer;
 
+}
+.prods-images{
+    height: 13rem;
 }
 
 /* *{
@@ -272,7 +278,6 @@ p{
 }
 
 .pands-front{
-    height: 100%;
     backface-visibility: hidden; 
 
 }

@@ -11,6 +11,7 @@ body{
     position: fixed;
     right: 0px;
     bottom: 10px;
+    /* width: 100%; */
 }
 .language-buton{
     background-color: rgb(53, 163, 145) ;
@@ -31,8 +32,9 @@ body{
 
 }
 .lang-item{
-    max-width: 7.5vw;
+    min-width: 15vw;
     cursor: pointer;
+    height: 100%; 
 
 }
 .lang-item:hover{
@@ -52,10 +54,11 @@ body{
     /* background: rgb(66,191,171); */
     /* background: radial-gradient(circle, rgba(66,191,171,1) 3%, rgba(42,156,165,1) 14%, rgba(0,95,154,1) 48%, rgba(0,47,76,1) 96% ); */
     /* filter: brightness(120%); */
-    background: linear-gradient(rgb(0, 44, 72),transparent),url('./imgs/bac&cont/pexels-engin-akyurt-2678059.jpg');
+    background: linear-gradient(rgb(0, 44, 72),rgba(0, 44, 72, 0.416)),url('./imgs/bac&cont/pexels-engin-akyurt-2678059.jpg');
     background-size: cover;
     background-position: center;
     height: 95vh;
+    max-height: 500px;
     /* max-height: 400px; */
 }
 #about-us{
@@ -63,8 +66,80 @@ body{
     margin-top: 2rem;
     background-color: rgba(230, 234, 234, 0.653);
     box-shadow: 12px 12px 2px 1px rgba(1, 1, 81, 0.2);
-
+    max-height: 800px;
     
+}
+.form-para-enviar{
+    width: 90%;
+}
+.text-about{
+    width: 100%;
+}
+
+@media  screen and (max-width: 400px){
+    .text-about{
+        width: 50%;
+    }
+    #about-us{
+        height: 1500px;
+
+    }
+    .input-group-fix{
+        width: 49%;
+    }
+    .contact-logo{
+        height: 10px;
+    }
+}
+.nave{
+    width: 50%;
+    font-size: clamp(1rem, 1.5vw, 1.1rem);
+}
+@media  screen and (max-width: 500px){
+ 
+    .text-about{
+        width: 88%;
+    }
+    #about-us{
+        height: 1500px;
+
+    }
+    .input-group-fix{
+        width: 49%;
+    }
+    .contact-logo{
+        height: 10px;
+    }
+    .logo-nav{
+        height: 75px;
+
+    }
+}
+
+@media  screen and (min-width: 501px) and (max-width: 850px){
+    #about-us{
+        height: 900px;
+
+    }
+    .input-group-fix{
+        width: 49%;
+    }
+}
+@media  screen and (min-width: 851px) and (max-width: 1215px){
+
+    .input-group-fix{
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    #about-us{
+        height: 500px;
+        width: 1150px;
+
+
+    }
+  
 }
 .see{
     color: black;
@@ -118,16 +193,17 @@ body{
 }
 #contact{
     background-image: url(imgs/bac&cont/escritorio-vacio-consultorio-medico-computadora-e-instrumentos-medicos-nadie-gabinete-utiliza-cita-consulta-visita-control-donde-medico-trata-pacientes-enfermedades_482257-41824.jpg);
-    height: 90vh;
+    /* height: 90vh; */
     background-size: cover;
 }
 .form{
-    background-color: rgba(255, 255, 255, 0.429);
+    background-color: rgba(79, 91, 118, 0.616);
     height: 75%;
-    min-width: 50vw;
+    /* min-width: 30vw; */
+    height: 90vh;
 }
 .info{
-    background-color: rgb(229, 226, 226);
+    background-color: rgb(237, 234, 234);
     min-width: 50vw;
 
 
@@ -138,34 +214,43 @@ body{
     flex: row;
 }
 .letras-home{
-    height: 15vh;
+    /* height: 15vh; */
     font-size: 15vh;
     /* max-width: 90vw; */
+    font-size: clamp(3rem, 10vw, 5rem);
+}
+p{
+    font-size: clamp(1rem, 2vw, 1.1rem);
 }
 .contact-logo{
-    height: 40vh;
-    max-height: 30vh;
-    max-width: 50vw;
+    height: 20vh;
+    /* max-height: 30vh;
+    max-width: 50vw; */
 
     
 }
+
 .titles{
     color: navy;
 }
 .about-images{
-    height: 75vh;
-    max-height: 400px;
-    max-width: 500px;
+    height: 100%;
+    min-height: 300px;
+    max-width: 450px;
+
+    
+
+    
 
 }
-.form{
-    height: 90vh;
-}
+
 .real-form{
-    background-color: rgba(2, 55, 87, 0.567);
-    max-width: 75%;
+    /* background-color: rgba(2, 55, 87, 0.567); */
+    max-width: 100%;
+    
     
 }
+
 
 p{
     font-size: clamp(1rem, 1.5vw, 1.1rem);
@@ -175,7 +260,7 @@ p{
 .nav{
     
     /* background: linear-gradient(rgba(7, 71, 111, 0.564), rgba(66,191,171));  */
-    background: linear-gradient(rgba(0, 44, 72, 0.849),rgba(190, 190, 190, 0));
+    background: linear-gradient(rgba(0, 44, 72, 0.849),rgba(0, 10, 66, 0.264), rgba(1, 18, 72, 0.007));
 
     position: fixed;
     top: 0;
@@ -310,9 +395,7 @@ p{
     
 }
 
-.input-group-fix{
-    width: 37%;
-}
+   
 
 .cards{
     max-width: 90vw;

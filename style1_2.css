@@ -48,17 +48,21 @@ body{
 .logo-nav{
     height: 13vh;
 }
+.Nav_home{
+    background: linear-gradient(rgb(0, 44, 72),rgba(0, 44, 72, 0.416)),url('./imgs/bac&cont/pexels-engin-akyurt-2678059.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    
+    max-height: 500px;
+}
 #home{
     padding-top: 10rem;
     /* background-image: url(imgs/bac&cont/Untitled.png); */
     /* background: rgb(66,191,171); */
     /* background: radial-gradient(circle, rgba(66,191,171,1) 3%, rgba(42,156,165,1) 14%, rgba(0,95,154,1) 48%, rgba(0,47,76,1) 96% ); */
     /* filter: brightness(120%); */
-    background: linear-gradient(rgb(0, 44, 72),rgba(0, 44, 72, 0.416)),url('./imgs/bac&cont/pexels-engin-akyurt-2678059.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 95vh;
-    max-height: 500px;
+    /* background: linear-gradient(rgb(0, 44, 72),rgba(0, 44, 72, 0.416)),url('./imgs/bac&cont/pexels-engin-akyurt-2678059.jpg'); */
     /* max-height: 400px; */
 }
 #about-us{
@@ -260,10 +264,10 @@ p{
 .nav{
     
     /* background: linear-gradient(rgba(7, 71, 111, 0.564), rgba(66,191,171));  */
-    background: linear-gradient(rgba(0, 44, 72, 0.849),rgba(0, 10, 66, 0.264), rgba(1, 18, 72, 0.007));
+    background: linear-gradient(rgba(0, 44, 72, 0.849),rgba(0, 8, 49, 0.007), rgba(1, 13, 55, 0.056));
 
-    position: fixed;
-    top: 0;
+    /* position: fixed;
+    top: 0; */
     width: 100%;
     /* Add other styles like height, padding, etc. */
     z-index: 100; /* Ensures the navbar appears above other content */

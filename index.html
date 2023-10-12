@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index,follow" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta http-equiv="refresh" content="10"> -->
 
     <title translate="no">Orthocare.life</title>
     <meta
@@ -28,7 +29,7 @@
     <script type="text/javascript" src="your/js/path/file.js?v=1"></script>
     <link href="/css/main.css?v=1" media="screen,print" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="style1_2.css" />
+    <link rel="stylesheet" href="style1_4.css" />
     <link rel="icon" href="./imgs/logos/logoo2.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,7 +66,7 @@
     </div>
   </div>
  </div>
-  <div class="Nav_home">
+  <div class="Nav_home d-flex flex-column">
 
     <nav class="nav navbar navbar-expand-lg navbar-dark">
       <div class="container d-flex justify-content-between align-items-center">
@@ -91,16 +92,16 @@
           class="collapse navbar-collapse justify-content-end"
           id="navbarNavAltMarkup"
         >
-        <ul class="eng navbar-nav d-flex justify-content-around   nave">
+        <ul class="eng navbar-nav d-flex justify-content-around  nave">
           <li class="nav-item">
-            <a class="nav-link text-light" aria-current="page" href="#home" id="naven1">Home</a> 
+            <a class="nav-link text-light " aria-current="page" href="#home" id="naven1">Home</a> 
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#about-us" id="naven2">About Us </a>
+            <a class="nav-link text-light " href="#about-us" id="naven2">About Us </a>
 
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#ps" id="naven3">Products & Services</a>
+            <a class="nav-link text-light " href="#ps" id="naven3">Products & Services</a>
 
           </li>
           <li class="nav-item">
@@ -110,7 +111,7 @@
          
 
         </ul >
-        <ul class="d-none esp navbar-nav d-flex justify-content-around w-50 fs-5">
+        <ul class="d-none esp navbar-nav d-flex justify-content-around  nave">
           <li class="nav-item">
             <a class="nav-link text-light" aria-current="page" href="#home" id="naven1">Inicio</a> 
           </li>
@@ -135,9 +136,9 @@
           
       </div>
     </nav>
-    <section id="home" class="row">
+    <section id="home" class="row d-flex justify-content-center align-items-center h-100">
       <div
-        class="mb-5 col d-flex flex-column justify-content-center align-items-center  me-lg-5 container ms-lg-5"
+        class="mb-5 col d-flex flex-column justify-content-center align-items-center  me-lg-5 container ms-lg-5 home-container"
       >
         <!-- <img
           class="letras-home mb-5"
@@ -153,16 +154,16 @@
             src="./imgs/logos/Rectangle 27(3).png"
             alt=""
           /> -->
-          <div class="d-flex flex-row justify-content-center align-items-end w-100 ">
-            <h1 class="letras-home text-light">ORTHOCARE  </h1>
+          <div class="d-flex flex-row justify-content-center align-items-end">
+            <h1 class="letras-home text-light fw-bolder">ORTHOCARE  </h1>
             <div class="life">.life</div>
 
           </div>
-     <p class="text-light  text-center eng">
+     <p class="text-light  text-center eng w-100 home-p fw-light">
       Your Mobility, Our Priority!
 
      </p>
-     <p class="text-light  text-center esp d-none">
+     <p class="text-light  text-center esp d-none w-100 home-p fw-light">
       Tu Mobilidad, Nuestra Prioridad!
 
      </p>
@@ -193,7 +194,7 @@
       <div class="row d-flex flex-row fw-light text-center">
         <div class="col d-flex flex-column  justify-content-center align-items-center eng">
           <div class="col d-flex flex-lg-row flex-column abou justify-content-start align-items-center">
-            <div class="d-flex col  justify-content-center align-items-center pb-4">
+            <div class="d-flex col  justify-content-center align-items-center pb-4 about-images-cont">
               <img
                 src="./imgs/bac&cont/ezgif.com-webp-to-jpg.jpg"
                 alt=""
@@ -201,9 +202,9 @@
               />
             </div>
 
-            <div class="col text-about">
+            <div class="col text-about text-center">
               
-              <div class=" col  d-block ">
+              <div class=" col  d-block text-about-des">
                 Orthocare’s team has been working with neurosurgeons, orthopedic
                 doctors, health-care professionals and medical institutions since
                 2023.   We partnered with some of the top companies in order to provide
@@ -235,10 +236,10 @@
                 />
               </div>
 
-              <div class="col text-about">
+              <div class="col text-about text-center">
                 
               
-                <div class="col d-block ">
+                <div class="col d-block text-about-des">
                   El equipo de Orthocare ha estado trabajando con neurocirujanos, ortopédicos
                   médicos, profesionales de la salud e instituciones médicas desde
                   2023. Nos asociamos con algunas de las principales empresas para brindar
@@ -273,40 +274,40 @@
             <img src="./imgs/icons/chiropractic.png" alt="" class="pro">
             <h3 class="fw-light">Spine </h3>
             <div class="coming">
-              Click to discover
+              Click 
             </div>
           </div>
           <div class="sports prod col pt-3 pb-3 fw-light">
             <img src="./imgs/icons/running(1).png" alt="" class="pro">
             <h3 class="fw-light">Sports</h3>
             <div class="coming">
-              Click to discover
+              Click 
             </div>
 
           </div>
           <div class="hip prod col pt-3 pb-3">
             <img src="./imgs/icons/pelvis.png" alt="" class="pro">
             <h3 class="fw-light">Hip</h3>
-            <div class="coming">Click to discover</div>
+            <div class="coming">Click </div>
 
           </div>
           <div class="knee prod col pt-3 pb-3">
             <img src="./imgs/icons/knee(1).png" alt="" class="pro">
             <h3 class="fw-light">Knee</h3>
-            <div class="coming">Click to discover</div>
+            <div class="coming">Click </div>
 
           </div>
           <div class="trauma prod col pt-3 pb-3">
             <img src="./imgs/icons/broken-bone.png" alt="" class="pro">
             <h3 class="fw-light">Trauma</h3>
-            <div class="coming">Click to discover</div>
+            <div class="coming">Click </div>
 
           </div>
           <div class="wound prod col pt-3 pb-3">
             <img src="./imgs/icons/bandage.png" alt="" class="pro">
 
             <h3 class="fw-light">Wound Care</h3>
-            <div class="coming">Click to discover</div>
+            <div class="coming">Click </div>
 
           </div>
         </div>
@@ -368,7 +369,7 @@
                 </div>
                 </div>
                 <div class="col ">
-                  <div class="col fw-light ">
+                  <div class="col fw-light text-about-des">
                     Maintain an optimal wound environment to promote moist healing of draining wounds with HELIX3-CP® Collagen Powder. 
                     The 100% Type 1 bovine native collagen particles retain their native helical structure, increasing bioavailability 
                     to deliver the benefits of collagen to the wound immediately and enhancing the vital scaffolding process for granulation 
@@ -396,7 +397,7 @@
                  
                 </div>
                 <div class="col">
-                  <div class="col fw-light ">
+                  <div class="col fw-light text-about-des">
                     Provide everything you need for your patients to perform proper dressing changes at home. AMERX Collagen Powder Wound Care Kits are available for 30-Day, 15-Day, or 5-Day treatment lengths with three secondary dressing options available based on your patient’s individual wound care needs.
                   </div>
                
@@ -418,7 +419,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="col fw-light ">
+                  <div class="col fw-light text-about-des">
                     Provide everything you need for your patients to perform proper dressing changes at home. AMERX Collagen Matrix Wound Care Kits are available for 30-Day or 15-Day treatment lengths based on your patient’s individual wound care needs. 
                   </div>
            
@@ -441,7 +442,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="col fw-light ">
+                  <div class="col fw-light text-about-des">
                     Deliver Type 1 native tropocollagen directly to your hard-to-heal wounds with HELIX3-CG Collagen Gel. Formulated to deliver the healing benefits of collagen with fewer fillers than the competition, HELIX3-CG provides an industry-leading 90% of active ingredients with each application. Whether you are looking to resolve dry to moderate exudating wounds, wounds with tunneling, undermining or hard-to-access areas, HELIX3-CG is your solution for advanced wound care.
                   </div>
            
@@ -473,35 +474,35 @@
             <img src="./imgs/icons/chiropractic.png" alt="" class="pro">
             <h3 class="fw-light">Columna Vertebral </h3>
             <div class="coming">
-              Haz click para más
+              Click
             </div>
           </div>
           <div class="sports prod col pt-3 pb-3">
             <img src="./imgs/icons/running(1).png" alt="" class="pro">
             <h3 class="fw-light">Deportes</h3>
             <div class="coming">
-              Haz click para más
+              Click
             </div>
           </div>
           <div class="hip prod col pt-3 pb-3">
             <img src="./imgs/icons/pelvis.png" alt="" class="pro">
             <h3 class="fw-light">Cadera</h3>
             <div class="coming">
-              Haz click para más
+              Click
             </div>
           </div>
           <div class="knee prod col pt-3 pb-3">
             <img src="./imgs/icons/knee(1).png" alt="" class="pro">
             <h3 class="fw-light">Rodilla</h3>
             <div class="coming">
-              Haz click para más
+              Click
             </div>
           </div>
           <div class="trauma prod col pt-3 pb-3">
             <img src="./imgs/icons/broken-bone.png" alt="" class="pro">
             <h3 class="fw-light">Trauma</h3>
             <div class="coming">
-              Haz click para más
+              Click
             </div>
           </div>
           <div class="wound prod col pt-3 pb-3">
@@ -509,7 +510,7 @@
 
             <h3 class="fw-light">Cuidado de heridas</h3>
             <div class="coming">
-              Haz click para más
+              Click
             </div>
           </div>
         </div>
@@ -566,7 +567,7 @@
                 </div>
                 <div class="col ">
               
-                  <div class="col fw-light ">
+                  <div class="col fw-light text-about-des">
                     Mantenga un ambiente óptimo para la herida para promover la curación húmeda de las heridas que drenan con el polvo de colágeno HELIX3-CP®.
                     Las partículas de colágeno nativo bovino 100 % tipo 1 conservan su estructura helicoidal nativa, lo que aumenta la biodisponibilidad.
                     para brindar los beneficios del colágeno a la herida de inmediato y mejorar el proceso de andamiaje vital para la granulación.
@@ -595,7 +596,7 @@
                 </div>
                 <div class="col">
              
-                  <div class="col fw-light">
+                  <div class="col fw-light text-about-des">
                     Proporcione todo lo necesario para que sus pacientes realicen cambios de apósito adecuados en casa. Los kits para el cuidado de heridas en polvo de colágeno AMERX están disponibles para tratamientos de 30, 15 o 5 días con tres opciones de apósitos secundarios disponibles según las necesidades individuales de cuidado de heridas de su paciente.                  
                   </div>
                   <div class="col mt-2 ">
@@ -616,10 +617,10 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="col fw-light ">
+                  <div class="col fw-light text-about-des">
                     Provide everything you need for your patients to perform proper dressing changes at home. AMERX Collagen Matrix Wound Care Kits are available for 30-Day or 15-Day treatment lengths based on your patient’s individual wound care needs. 
                   </div>
-                  <div class="col fw-light">
+                  <div class="col fw-light text-about-des">
                     Proporcione todo lo necesario para que sus pacientes realicen cambios de apósito adecuados en casa. Los kits para el cuidado de heridas AMERX Collagen Matrix están disponibles para tratamientos de 30 o 15 días de duración según las necesidades individuales de cuidado de heridas de su paciente.
                   </div>
                   <div class="col mt-2 ">
@@ -642,13 +643,13 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="col fw-light ">
+                  <div class="col fw-light text-about-des">
                     Ofrezca tropocolágeno nativo tipo 1 directamente a sus heridas difíciles de curar con el gel de colágeno HELIX3-CG. Formulado para brindar los beneficios curativos del colágeno con menos rellenos que la competencia, HELIX3-CG proporciona un 90 % de ingredientes activos líder en la industria con cada aplicación. Ya sea que esté buscando resolver heridas con exudado seco a moderado, heridas con túneles, áreas socavadas o de difícil acceso, HELIX3-CG es su solución para el cuidado avanzado de heridas.
                   </div>
            
                   <div class="col mt-2 ">
                     <div class="col ">
-                      <a href="https://amerxhc.com/helix3-cg-collagen-gel/"><button class="btn more p-2 rounded-pill ">Product's Site</button></a>
+                      <a href="https://amerxhc.com/helix3-cg-collagen-gel/"><button class="btn more p-2 rounded-pill ">Página del producto </button></a>
 
                     </div>
                   </div>
@@ -669,16 +670,16 @@
           <div class="prod st  pt-3 pb-3 col">
             <img src="./imgs/icons/hospital(1).png" alt="" class="pro">
             <h3 class="fw-light">Surgery Technician</h3>
-            <div class="coming">
-              Click to discover
+            <div class="coming fw-light">
+              Click
             </div>
           </div>
           <div class="prod oscb pt-3 pb-3 col">
             <img src="./imgs/icons/bill.png" alt="" class="pro">
 
             <h3 class="fw-light">Orthopedic Surgery <br> Coding and Billing</h3>
-            <div class="coming">
-              Click to discover
+            <div class="coming fw-light">
+              Click 
             </div>
           </div>
         </div>
@@ -686,7 +687,7 @@
           <div class="st-services d-none pt-3 pb-3 w-100 ">
             <h3 class="fw-bold">Surgery Technician</h3>
             <div class="  w-100 "><a class="close st-close text-decoration-underline w-100 ">Close</a></div>
-            <div class="w-100 text-wrap text-center fw-light p-4 fs-5">
+            <div class="w-100 text-wrap text-center fw-light p-4 fs-5 text-about-des">
                 Orthopedic surgical technicians -  We can provide support to your practice and your hospital as well as your <br> private practice including casting, suture removal and wound care. Contact us for more information in regards availability and rates.
 
 
@@ -695,7 +696,7 @@
           <div class="oscb-services d-none pt-3 pb-3">
             <h3 class="fw-bold">Orthopedic Surgery <br> Coding and Billing</h3>
             <div class="  w-100 "><a class="close oscb-close text-decoration-underline w-100 ">Close</a></div>
-            <div class="p-4 fs-5 fw-light">
+            <div class="p-4 fs-5 fw-light text-about-des">
               We provide comprehensive orthopedic  billing services for your practice and your hospital. Services includes documentation gathering, <br> billing services and billing recovery.
 
             </div>
@@ -711,7 +712,7 @@
             <img src="./imgs/icons/hospital(1).png" alt="" class="pro">
             <h3 class="fw-light">Técnico Cirujano</h3>
             <div class="coming">
-              Haz click para más
+              Click
             </div>
           </div>
           <div class="prod oscb pt-3 pb-3 col">
@@ -719,7 +720,7 @@
 
             <h3 class="fw-light">Cirujía Ortopédica <br> Codificación y Facturación</h3>
             <div class="coming">
-              Haz click para más
+              Click           
             </div>
        
           </div>
@@ -729,7 +730,7 @@
             <h3 class="fw-bold">Técnico Cirujano</h3>
             <div class="  w-100 "><a class="close st-close text-decoration-underline w-100 ">Cerrar</a></div>
 
-            <div class="fs-5 fw-light p-4">
+            <div class="fs-5 fw-light p-4 text-about-des">
               Técnicos en cirugía ortopédica: podemos brindar apoyo a su práctica y a su hospital, así como a su <br>  práctica privada, incluidos yesos, extracción de suturas y cuidado de heridas. Contáctenos para más información sobre disponibilidad y tarifas.
             </div>
 
@@ -738,7 +739,7 @@
             <h3 class="fw-bold">Cirujía Ortopédica <br> Codificación y Facturación</h3>
             <div class="  w-100 "><a class="close oscb-close text-decoration-underline w-100 ">Cerrar</a></div>
               
-            <div class="fs-5 fw-light p-4">
+            <div class="fs-5 fw-light p-4 text-about-des">
               Brindamos servicios integrales de facturación ortopédica para su práctica y su hospital. Los servicios incluyen recopilación de documentación, servicios de facturación y recuperación de facturación.
 
             </div>
@@ -812,10 +813,10 @@
       <div
         class="col info d-flex justify-content-center align-items-center flex-column"
       >
-        <div class="col d-flex flex-column justify-content-center align-items-center">
+        <div class="col d-flex flex-column justify-content-center align-items-center pb-3">
           <img class="contact-logo" src="./imgs/logos/logoo1.png" alt="" />
           <div class="d-flex flex-row ">
-            <div class="contact-title">ORTHOCARE</div>
+            <div class="contact-title fw-bold">ORTHOCARE</div>
             <div class="contact-life">.life</div>
 
           </div>

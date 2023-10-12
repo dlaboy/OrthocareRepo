@@ -53,23 +53,23 @@ body{
     background-size: cover;
     background-position: center;
     height: 95vh;
-    
     max-height: 500px;
 }
-#home{
-    padding-top: 10rem;
+/* #home{ */
+    /* padding-top: 10rem; */
+
     /* background-image: url(imgs/bac&cont/Untitled.png); */
     /* background: rgb(66,191,171); */
     /* background: radial-gradient(circle, rgba(66,191,171,1) 3%, rgba(42,156,165,1) 14%, rgba(0,95,154,1) 48%, rgba(0,47,76,1) 96% ); */
     /* filter: brightness(120%); */
     /* background: linear-gradient(rgb(0, 44, 72),rgba(0, 44, 72, 0.416)),url('./imgs/bac&cont/pexels-engin-akyurt-2678059.jpg'); */
     /* max-height: 400px; */
-}
+/* } */
 #about-us{
     height: 85vh;
     margin-top: 2rem;
     background-color: rgba(230, 234, 234, 0.653);
-    box-shadow: 12px 12px 2px 1px rgba(1, 1, 81, 0.2);
+    /* box-shadow: 12px 12px 2px 1px rgba(1, 1, 81, 0.2); */
     max-height: 800px;
     
 }
@@ -94,6 +94,27 @@ body{
     .contact-logo{
         height: 10px;
     }
+
+
+    .home-container{
+        width: 80%;
+    }
+    home-p{
+        font-size: clamp(.2rem, 1vw, .6rem);
+        
+        /* width: 35vw; */
+    }
+    .letras-home{
+        font-size: clamp(2rem, 7vw, 4rem);
+
+    }
+    .text-about-des{
+        width: 95%;
+    }
+   
+
+
+
 }
 .nave{
     width: 50%;
@@ -105,7 +126,7 @@ body{
         width: 88%;
     }
     #about-us{
-        height: 1500px;
+        height: 600px;
 
     }
     .input-group-fix{
@@ -118,6 +139,37 @@ body{
         height: 75px;
 
     }
+    .about-images{
+        /* height: 100%; */
+        /* width: 300px; */
+        display: none;
+        
+    
+        
+    
+    }
+    .pro{
+        max-height: 50px;
+    }
+    .prod{
+        font-size: .8rem;
+    }
+    .lang-item{
+        min-width: 30vw;
+    
+    
+    }
+    #lang-dis{
+        max-width: 30vw;
+  
+    
+    }
+ 
+  
+}
+
+.nave{
+    width: 50%;
 }
 
 @media  screen and (min-width: 501px) and (max-width: 850px){
@@ -128,12 +180,42 @@ body{
     .input-group-fix{
         width: 49%;
     }
+    .pro{
+        max-height: 60px;
+    }
+    .lang-item{
+        min-width: 30vw;
+    
+    
+    }
+    #lang-dis{
+        max-width: 30vw;
+  
+    
+    }
 }
 @media  screen and (min-width: 851px) and (max-width: 1215px){
 
     .input-group-fix{
         width: 49%;
     }
+ 
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .nave{
+        width: 75%;
+    }
+    .logo-nav{
+        height: 70px;
+
+    }
+  
+}
+@media screen and (min-width: 768px) {
+    .Nav_home{
+        max-height: 600px;
+    }
+  
 }
 
 @media screen and (min-width: 992px){
@@ -143,8 +225,10 @@ body{
 
 
     }
+   
   
 }
+
 .see{
     color: black;
 }
@@ -173,7 +257,7 @@ body{
 
 }
 #ps{
-    background-image: url(imgs/bac&cont/Group\ 1\(1\).png);
+    background-image: url(imgs/bac&cont/Group\ 2\(1\).png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -219,7 +303,7 @@ body{
 }
 .letras-home{
     /* height: 15vh; */
-    font-size: 15vh;
+    /* font-size: 15vh; */
     /* max-width: 90vw; */
     font-size: clamp(3rem, 10vw, 5rem);
 }
@@ -266,7 +350,7 @@ p{
     /* background: linear-gradient(rgba(7, 71, 111, 0.564), rgba(66,191,171));  */
     background: linear-gradient(rgba(0, 44, 72, 0.849),rgba(0, 8, 49, 0.007), rgba(1, 13, 55, 0.056));
 
-    /* position: fixed;
+    /* position: s;
     top: 0; */
     width: 100%;
     /* Add other styles like height, padding, etc. */

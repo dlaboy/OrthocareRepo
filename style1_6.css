@@ -143,7 +143,7 @@ body{
 
 }
 #ps{
-    background-image: url(imgs/bac&cont/Group\ 2\(1\).png);
+    background-image: url(imgs/bac&cont/logo_azul.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -381,6 +381,16 @@ p{
 } */
 /* blue (0,95,154) */
 /* turq (66,191,171)  */
+
+#news{
+    background-image: url(/imgs/bac&cont/arbol_verde.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+
+
 @media  screen and (max-width: 400px){
     .text-about{
         width: 50%;

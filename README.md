@@ -1,2 +1,2 @@
 # OrthocareRepo
-Repository for Orthocare Proyect
+Repository for Orthocare Project

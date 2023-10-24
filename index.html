@@ -29,7 +29,7 @@
     <script type="text/javascript" src="your/js/path/file.js?v=1"></script>
     <link href="/css/main.css?v=1" media="screen,print" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="style1_6.css" />
+    <link rel="stylesheet" href="style1_7.css" />
     <link rel="icon" href="./imgs/logos/logoo2.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,6 +37,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:wght@400;600&family=Oswald&display=swap" rel="stylesheet">
 
     <!-- Scrits -->
     <script
@@ -67,7 +70,6 @@
   </div>
  </div>
   <div class="Nav_home d-flex flex-column">
-
     <nav class="nav navbar navbar-expand-lg navbar-dark">
       <div class="container d-flex justify-content-between align-items-center">
         <div class="d-flex flex-lg-row flex-column justify-content-center align-items-center">
@@ -101,6 +103,10 @@
 
           </li>
           <li class="nav-item">
+            <a class="nav-link text-light " href="#news" id="naven2">News </a>
+
+          </li>
+          <li class="nav-item">
             <a class="nav-link text-light " href="#ps" id="naven3">Products & Services</a>
 
           </li>
@@ -117,6 +123,10 @@
           </li>
           <li class="nav-item">
             <a class="nav-link text-light" href="#about-us" id="naven2">Sobre Nosotros</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#Noticias" id="naven2">Noticias</a>
 
           </li>
           <li class="nav-item">
@@ -167,8 +177,8 @@
       Tu Mobilidad, Nuestra Prioridad!
 
      </p>
-     <a href="#about-us"><button class="btn more p-sm-3 p-2  rounded-pill eng">Read more about us!</button></a>
-     <a href="#about-us"><button class="btn more p-sm-3 p-2 rounded-pill esp d-none">Ve más sobre nosotros</button></a>
+     <a href="#about-us"><button class="btn more p-sm-3 p-2  rounded-1 eng">Read more about us!</button></a>
+     <a href="#about-us"><button class="btn more p-sm-3 p-2 rounded-1 esp d-none">Ve más sobre nosotros</button></a>
       </div>
     </section>
   </div>
@@ -575,9 +585,9 @@
             </div>
 
           </div>
-          <div class="wound-products d-none pt-3 pb-3 d-flex flex-column  h-100 cards">
-            <h3 class="fw-bold">Cuidado de Heridas</h3>
-            <div class="  w-100 "><a class="close wound-close text-decoration-underline w-100 ">Cerrar</a></div>
+          <div class="wound-products d-none pt-3 pb-3 d-flex flex-column container h-100 cards w-100">
+            <h3 class="col fw-bold">Cuidado de Heridas</h3>
+            <div class="col  w-100 "><a class="close wound-close text-decoration-underline w-100 ">Cerrar</a></div>
             <div class="col d-flex flex-column">
               
               <div class="col h-100 d-flex flex-md-row flex-column pt-3 pb-3 border-bottom">
@@ -831,25 +841,56 @@
         </div> -->
       </div>
     </section>
-    <!-- <section id="news" class="row d-flex flex-column">
-      <div class=" text-center  p-xl-5  p-3 col">
-        <h2 class="fw-bolder text-light">News</h2>
+    <section id="news" class=" d-flex flex-column  align-items-center  ">
+      <div class=" text-center  p-xl-4  p-1 col  w-100">
+        <h2 class="fw-bolder titles news-title">News</h2>
+        <h5 class="oswald">Stay up to date with the latest updates</h5>
       </div>
       
-      <div class="col current-news">
-        <div class="col news-instance">
-          <div class="date col"><h3>10/9/23</h3></div>
-          <div class="des col">Orthocare.life acquires exclusive contract with Gulden Ophtalmics for their product distribution in PR. </div>
-        </div>
-        <div class="col news-instance">
+      <div class="col current-news  d-flex flex-lg-row flex-column ">
+        <div class="col news-instance p-2 m-1">
           <div class="title col"><h3>9/1/23</h3></div>
-          <div class="des col">Orthocare.life acquires exclusive contract with </div>
+          <div class="content d-flex  flex-column align-items-center justify-content-center ">
+
+            <div class="des col oswald align-self-start">Orthocare.life acquires exclusive contract with American Health Care for product distribution in Puerto Rico.</div>
+            <div class="imgs col d-flex flex-wrap ">
+              <div class=" col ">
+                <img class="distributor" src="./imgs/distributors/AMERIGEL_1C_ASAWC-400x72.PNG" alt="">
+  
+              </div>
+              <div class=" col ">
+                <img class="distributor" src="./imgs/distributors/amerx-kits-dressings.PNG" alt="">
+              </div>
+              <div class=" col">
+                <img class="distributor" src="./imgs/distributors/amerxhc.com.PNG" alt="">
+              </div>
+              <div class=" col">
+                <img class="distributor" src="./imgs/distributors/extremitease.PNG" alt="">
+              </div>
+              <div class=" col">
+                <img class="distributor" src="./imgs/distributors/helix3.PNG" alt="">
+              </div>
+              <div class=" col">
+                <img class="distributor" src="./imgs/distributors/turnkey-dme.PNG" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col news-instance p-2 m-1  ">
+          <div class="date col"><h3>10/9/23</h3></div>
+          <div class="col content d-flex  flex-column align-items-center justify-content-center h-100">
+            <div class="des col oswald align-self-start">Orthocare.life acquires exclusive contract with Gulden Ophtalmics for their product distribution in Puerto Rico. </div>
+            <div class=" col "><img class="gulden  " src="./imgs/distributors/guldenophthalmics.com.PNG" alt=""></div>
+          </div>
         </div>
      
 
       </div>
+      <div class="col d-flex justify-content-center align-items-center mb-1 mt-1  container text-center w-100 titles">
+        For more distribution opportunities please contact us at info@orthocare.life.
+      </div>
 
-    </section> -->
+    </section>
     <section id="contact" class="row d-flex flex-md-row flex-column">
       <div class="col form d-flex justify-content-center align-items-center ">
         <div
@@ -864,9 +905,8 @@
             </h2>
           </div>
 
-          <form action="https://formsubmit.co/info@orthocare.life" method="POST" class="p-5"/>
+          <!-- <form action="https://formsubmit.co/laboydiego23@orthocare.life" method="POST" class="p-5"/>
             <div class="col text-body-tertiary d-flex flex-column w-100 justify-content-center align-items-center">
-              <!-- <h5 translate="yes" id="engli7">Coming Soon</h5> -->
               <input type="text" class="bg-secondary-subtle border-0 rounded-3 w-100 p-2" placeholder="Topic" name="_subject">
               <input type="text" class="bg-secondary-subtle border-0 rounded-3 w-100 mt-2 p-2" placeholder="Name" name="name">
               <div class="col input-group d-flex flex-row justify-content-center align-items-center ">
@@ -880,7 +920,31 @@
                 <button class="send-button btn w-100 eng" type="submit"> Send </button>
                 <button class="send-button btn w-100 d-none esp" type="submit"> Enviar </button>
             </div>
+          </form> -->
+          
+          <form action="https://api.web3forms.com/submit" method="POST">
+
+            
+            <div class="col text-body-tertiary d-flex flex-column w-100 justify-content-center align-items-center">
+              <input type="hidden" name="access_key" value="
+              e27a5732-f164-4638-94da-3b4592c0c82d">
+              <input type="text" class="bg-secondary-subtle border-0 rounded-3 w-75 p-2" placeholder="Topic" name="_subject">
+              <input type="text" class="bg-secondary-subtle border-0 rounded-3 w-75 mt-2 p-2" placeholder="Name" name="name">
+              <div class="col input-group d-flex flex-row justify-content-center align-items-center ">
+                <input type="text" class=" bg-secondary-subtle border-0 rounded-3 input-group-fix mt-2 p-2" placeholder="Email" name="email">
+                <input type="text" class=" bg-secondary-subtle border-0 rounded-3 input-group-fix ms-1  mt-2 p-2" placeholder="Phone" name="phone">
+
+              </div>
+              <textarea type="text" class="bg-secondary-subtle border-0 rounded-3 w-75 mt-2 p-2" placeholder="Message" rows="5" cols="5" name="message"></textarea>
+              <div class="h-captcha mt-2" data-captcha="true"></div>
+            </div>
+            <div class="col w-100 d-flex justify-content-center align-items-center pt-3">
+              <button class="send-button btn w-75 eng" type="submit"> Send </button>
+              <button class="send-button btn w-75 d-none esp" type="submit"> Enviar </button>
+          </div>
+
           </form>
+
         </div>
       </div>
       <div
@@ -914,6 +978,8 @@
     </section>
   </body>
  <script src="./script.js"></script>
+ <!-- <script src="./form.js"></script> -->
+ <script src="https://web3forms.com/client/script.js" async defer></script>
 
 
 

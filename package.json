@@ -1,0 +1,23 @@
+{
+  "name": "orthocarerepo",
+  "version": "1.0.0",
+  "description": "Repository for Orthocare Proyect",
+  "main": "form.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlaboy/OrthocareRepo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dlaboy/OrthocareRepo/issues"
+  },
+  "homepage": "https://github.com/dlaboy/OrthocareRepo#readme",
+  "dependencies": {
+    "axios": "^1.5.1"
+  }
+}

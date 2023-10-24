@@ -82,37 +82,18 @@ body{
 
 
 .nave{
-    width: 50%;
+    width: 60%;
     font-size: clamp(1rem, 1.5vw, 1.1rem);
 }
 
 
-.nave{
-    width: 50%;
+
+
+.input-group-fix{
+    width: 37%;
 }
 
-@media  screen and (min-width: 501px) and (max-width: 850px){
-    #about-us{
-        height: 900px;
 
-    }
-    .input-group-fix{
-        width: 49%;
-    }
-    .pro{
-        max-height: 60px;
-    }
-    .lang-item{
-        min-width: 30vw;
-    
-    
-    }
-    #lang-dis{
-        max-width: 30vw;
-  
-    
-    }
-}
 
 
 .see{
@@ -138,6 +119,7 @@ body{
 
 
 }
+
 .see:hover{
     color: rgba(66,191,171);
 
@@ -208,6 +190,7 @@ p{
 
 .titles{
     color: navy;
+
 }
 .about-images{
     height: 100%;
@@ -383,11 +366,47 @@ p{
 /* turq (66,191,171)  */
 
 #news{
-    background-image: url(/imgs/bac&cont/arbol_verde.png);
+    background-image: url(/imgs/bac&cont/arbol_blanco.png);
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat; 
+    /* height: 100vh; */
+    min-height: 750px;
 
+}
+.current-news{
+    width: 90%;
+    min-height: 500px;
+    /* background-color: rgb(244, 243, 243) */
+
+}
+.distributor{
+    height: 50px;
+    margin: 1rem;
+    width: 195px;
+}
+
+.news-instance{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-color: rgb(2, 113, 157);
+    border-width: 1rem;
+    border-style: solid;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: rgb(246, 245, 245);
+}
+/* .news-title{
+    font-size: 50px;
+
+} */
+.oswald{
+    font-family: 'Oswald', sans-serif;
+
+}
+.des{
+    font-size: 25px;
 }
 
 
@@ -415,7 +434,11 @@ p{
     .text-about-des{
         width: 95%;
     }
-   
+    .distributor{
+        height: 40px;
+        width: 185px;
+
+    }
 
 
 
@@ -430,11 +453,20 @@ p{
 
     }
     .input-group-fix{
-        width: 49%;
+        width: 37%;
     }
     .contact-logo{
         height: 75px;
     }
+    .distributor{
+        height: 40px;
+        width: 185px;
+
+    }
+    .gulden{
+        height: 50px;
+    }
+
     .logo-nav{
         height: 75px;
 
@@ -464,8 +496,27 @@ p{
   
     
     }
+
+
  
   
+}
+@media screen and (max-width:850px) {
+    .current-news{
+        min-height: 700px
+
+    }
+    .des{
+        font-size: 20px;
+    }
+    .distributor{
+        height: 35px;
+        width: 180px;
+
+    }
+    .gulden{
+        height: 48px;
+    }
 }
 @media screen and (min-width:370px) and (max-width: 430px) {
     .letras-home,.contact-title{
@@ -481,10 +532,11 @@ p{
         
         /* width: 35vw; */
     }
+
     
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 378px) {
     .letras-home,.contact-title{
         font-size: 30px;
 
@@ -497,13 +549,24 @@ p{
         font-size: 10px;        
         /* width: 35vw; */
     }
+    #news{
+        height: 1200px;
+    }
 
     
 }
 @media  screen and (min-width: 851px) and (max-width: 1215px){
 
     .input-group-fix{
-        width: 49%;
+        width: 37%;
+    }
+    .distributor{
+        height: 35px;
+        width: 145px;
+
+    }
+    .gulden{
+        height: 48px;
     }
  
 }
@@ -512,15 +575,22 @@ p{
         width: 75%;
     }
     .logo-nav{
-        height: 70px;
+        height: 75px;
 
     }
   
+}
+@media screen and (min-width: 501px) and (max-width: 992px){
+    .logo-nav{
+        height: 75px;
+
+    }
 }
 @media screen and (min-width: 768px) {
     .Nav_home{
         max-height: 600px;
     }
+
   
 }
 
@@ -533,4 +603,41 @@ p{
     }
    
   
+}
+@media  screen and (min-width: 501px) and (max-width: 850px){
+    #about-us{
+        height: 900px;
+
+    }
+    .input-group-fix{
+        width: 37%;
+    }
+    .pro{
+        max-height: 60px;
+    }
+    .lang-item{
+        min-width: 30vw;
+    
+    
+    }
+    #lang-dis{
+        max-width: 30vw;
+  
+    
+    }
+}
+@media screen and (max-width: 523px) {
+    .distributor{
+        height: 25px;
+        width: 115px;
+
+
+
+    }
+}
+ 
+@media screen and (min-width: 768px) and (max-width:992px) {
+    #contact, .form{
+        height: 800px;
+    }
 }

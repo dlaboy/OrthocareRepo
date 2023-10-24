@@ -162,6 +162,30 @@ var woundCloser = document.querySelectorAll('.wound-close');
   })
 })
 
+var ophta = document.querySelectorAll('.ophta');
+
+var ophtaCloser = document.querySelectorAll('.ophta-close');
+
+[...ophtaCloser].forEach((closer)=>[
+  closer.addEventListener('click',()=>{
+    var ophtaSection = document.querySelectorAll('.ophta-products');
+      [...ophtaSection].forEach((ophtaSec)=>{
+        ophtaSec.classList.toggle('d-none');
+  
+      })
+  })
+]);
+
+[...ophta].forEach((ophta)=>{
+  ophta.addEventListener('click',()=>{
+    var ophtaSection = document.querySelectorAll('.ophta-products');
+    [...ophtaSection].forEach((ophtaSec)=>{
+      ophtaSec.classList.toggle('d-none');
+
+    })
+  })
+})
+
 
 var st = document.querySelectorAll('.st');
 

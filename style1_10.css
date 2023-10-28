@@ -451,6 +451,7 @@ p{
 .articles{
     width: 67%;
 }
+
 @media screen and (min-width: 845px) and (max-width:1134px){
     .art{
         min-width: 275px;
@@ -718,4 +719,17 @@ p{
     #contact, .form{
         height: 800px;
     }
+}
+@media  screen and (max-width: 480px) {
+    .art, .news-instance{
+        min-width: 300px;
+        max-width: 300px;
+        margin:.2rem;
+    }
+    .distributor{
+        height: 20px;
+        width: 80px;
+
+    }
+   
 }

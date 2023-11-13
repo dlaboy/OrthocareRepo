@@ -162,6 +162,7 @@ var woundCloser = document.querySelectorAll('.wound-close');
   })
 })
 
+// Ophthalmics Products click listeners
 var ophta = document.querySelectorAll('.ophta');
 
 var ophtaCloser = document.querySelectorAll('.ophta-close');
@@ -185,6 +186,32 @@ var ophtaCloser = document.querySelectorAll('.ophta-close');
     })
   })
 })
+
+// Medical Supplies Products click listeners
+var supp = document.querySelectorAll('.supp');
+
+var suppCloser = document.querySelectorAll('.supp-close');
+
+[...suppCloser].forEach((closer)=>[
+  closer.addEventListener('click',()=>{
+    var suppSection = document.querySelectorAll('.supp-products');
+      [...suppSection].forEach((suppSec)=>{
+        suppSec.classList.toggle('d-none');
+  
+      })
+  })
+]);
+
+[...supp].forEach((supp)=>{
+  supp.addEventListener('click',()=>{
+    var suppSection = document.querySelectorAll('.supp-products');
+    [...suppSection].forEach((suppSec)=>{
+      suppSec.classList.toggle('d-none');
+
+    })
+  })
+})
+
 
 
 var st = document.querySelectorAll('.st');

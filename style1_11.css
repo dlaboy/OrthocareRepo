@@ -396,6 +396,9 @@ p{
 .arrow{
     height: 15px;
 }
+.next:hover, .previous:hover{
+    cursor: pointer;
+}
 
 .news-instance{
     margin-top: 3rem;

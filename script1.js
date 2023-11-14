@@ -308,33 +308,123 @@ var pands = document.querySelectorAll('.pands');
 
 
     // slideshow 
-var nextbutton = document.querySelector(".next");
-
-nextbutton.addEventListener('click',()=>{
-  if(!document.querySelector(".first-c-armor").classList.contains('d-none') && document.querySelector(".second-c-armor").classList.contains('d-none')){
-    document.querySelector(".first-c-armor").classList.add('d-none');
-    document.querySelector(".second-c-armor").classList.remove('d-none');
-  }
-  else if(!document.querySelector(".second-c-armor").classList.contains('d-none') && document.querySelector(".third-c-armor").classList.contains('d-none')){
-    document.querySelector(".second-c-armor").classList.add('d-none');
-    document.querySelector(".third-c-armor").classList.remove('d-none');
+var nextbutton = document.querySelectorAll(".next");
 
 
-  }
+var firstArmorImage = document.querySelectorAll(".first-c-armor");
+var secondArmorImage = document.querySelectorAll(".second-c-armor");
+var thirdArmorImage = document.querySelectorAll(".third-c-armor");
+
+var arrowLeft = document.querySelectorAll('.arrow-left');
+var arrowRight = document.querySelectorAll('.arrow-right');
+
+var emptyPrevious = document.querySelectorAll('.empty-previous');
+var emptyNext = document.querySelectorAll('.empty-next');
+
+[...nextbutton].forEach((nButton)=>{
+  nButton.addEventListener('click',function(){
+
+    [...firstArmorImage,
+     ...secondArmorImage,
+     ...thirdArmorImage, 
+     ...arrowLeft, 
+     ...arrowRight, 
+     ...emptyNext, 
+     ...emptyPrevious].forEach((element,index)=>{
+      if(index < 2){
+        console.log(index)
+        if(!firstArmorImage[index].classList.contains('d-none') && secondArmorImage[index].classList.contains('d-none')){
+          firstArmorImage[index].classList.add('d-none');
+          secondArmorImage[index].classList.remove('d-none');
+        }
+        else if(!secondArmorImage[index].classList.contains('d-none') && thirdArmorImage[index].classList.contains('d-none')){
+          secondArmorImage[index].classList.add('d-none');
+          thirdArmorImage[index].classList.remove('d-none');
+        }
+         if(!firstArmorImage[index].classList.contains('d-none')){
+          emptyPrevious[index].classList.remove('d-none');
+          arrowLeft[index].classList.add('d-none');
+        
+        }
+        else{
+          emptyPrevious[index].classList.add('d-none');
+          arrowLeft[index].classList.remove('d-none');
+        }
+
+        if(!thirdArmorImage[index].classList.contains('d-none')){
+          emptyNext[index].classList.remove('d-none');
+          arrowRight[index].classList.add('d-none');
+        
+        }
+        else{
+          emptyNext[index].classList.add('d-none');
+          arrowRight[index].classList.remove('d-none');
+        }
+
+      }
+    })
+   
+    
+    
+ 
+
+  })
 })
 
-var previousbutton = document.querySelector('.previous');
-
-previousbutton.addEventListener('click',()=>{
-  if(document.querySelector(".first-c-armor").classList.contains('d-none') && !document.querySelector(".second-c-armor").classList.contains('d-none')){
-    document.querySelector(".first-c-armor").classList.remove('d-none');
-    document.querySelector(".second-c-armor").classList.add('d-none');
-  }
-  else if(document.querySelector(".second-c-armor").classList.contains('d-none') && !document.querySelector(".third-c-armor").classList.contains('d-none')){
-    document.querySelector(".second-c-armor").classList.remove('d-none');
-    document.querySelector(".third-c-armor").classList.add('d-none');
+var previousbutton = document.querySelectorAll('.previous');
 
 
-  }
-  
+[...previousbutton].forEach((pButton)=>{
+  pButton.addEventListener('click',function(){
+    [...firstArmorImage,
+      ...secondArmorImage,
+      ...thirdArmorImage, 
+      ...arrowLeft, 
+      ...arrowRight, 
+      ...emptyNext, 
+      ...emptyPrevious].forEach((element,index)=>{
+       if(index < 2){
+         console.log(index)
+         if(firstArmorImage[index].classList.contains('d-none') && !secondArmorImage[index].classList.contains('d-none')){
+          firstArmorImage[index].classList.remove('d-none');
+          secondArmorImage[index].classList.add('d-none');
+        }
+        else if(secondArmorImage[index].classList.contains('d-none') && !thirdArmorImage[index].classList.contains('d-none')){
+          secondArmorImage[index].classList.remove('d-none');
+          thirdArmorImage[index].classList.add('d-none');
+      
+      
+        }
+      
+        
+        if(!firstArmorImage[index].classList.contains('d-none')){
+          emptyPrevious[index].classList.remove('d-none');
+          arrowLeft[index].classList.add('d-none');
+        
+        }
+        else{
+          emptyPrevious[index].classList.add('d-none');
+          arrowLeft[index].classList.remove('d-none');
+        }
+        
+        if(!thirdArmorImage[index].classList.contains('d-none')){
+          emptyNext[index].classList.remove('d-none');
+          arrowRight[index].classList.add('d-none');
+        
+        }
+        else{
+          emptyNext[index].classList.add('d-none');
+          arrowRight[index].classList.remove('d-none');
+        }
+        
+ 
+       }
+     })
+  })
 })
+
+
+
+
+p
+

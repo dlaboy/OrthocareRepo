@@ -305,3 +305,36 @@ var pands = document.querySelectorAll('.pands');
         navbar.classList.remove("sticky");
       }
     });
+
+
+    // slideshow 
+var nextbutton = document.querySelector(".next");
+
+nextbutton.addEventListener('click',()=>{
+  if(!document.querySelector(".first-c-armor").classList.contains('d-none') && document.querySelector(".second-c-armor").classList.contains('d-none')){
+    document.querySelector(".first-c-armor").classList.add('d-none');
+    document.querySelector(".second-c-armor").classList.remove('d-none');
+  }
+  else if(!document.querySelector(".second-c-armor").classList.contains('d-none') && document.querySelector(".third-c-armor").classList.contains('d-none')){
+    document.querySelector(".second-c-armor").classList.add('d-none');
+    document.querySelector(".third-c-armor").classList.remove('d-none');
+
+
+  }
+})
+
+var previousbutton = document.querySelector('.previous');
+
+previousbutton.addEventListener('click',()=>{
+  if(document.querySelector(".first-c-armor").classList.contains('d-none') && !document.querySelector(".second-c-armor").classList.contains('d-none')){
+    document.querySelector(".first-c-armor").classList.remove('d-none');
+    document.querySelector(".second-c-armor").classList.add('d-none');
+  }
+  else if(document.querySelector(".second-c-armor").classList.contains('d-none') && !document.querySelector(".third-c-armor").classList.contains('d-none')){
+    document.querySelector(".second-c-armor").classList.remove('d-none');
+    document.querySelector(".third-c-armor").classList.add('d-none');
+
+
+  }
+  
+})

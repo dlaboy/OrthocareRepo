@@ -393,6 +393,9 @@ p{
     margin: 1rem;
     width: 155px;
 }
+.arrow{
+    height: 15px;
+}
 
 .news-instance{
     margin-top: 3rem;

@@ -88,6 +88,9 @@ body{
 .text-about{
     width: 100%;
 }
+.gulden{
+    width: 90%;
+}
 
 
 .nave{
@@ -398,9 +401,9 @@ p{
 
 }
 .distributor{
-    height: 30px;
-    margin: 1rem;
-    width: 155px;
+    height: 25px;
+    margin: .75rem;
+    width: 125px;
 }
 .arrow{
     height: 15px;
@@ -509,7 +512,7 @@ p{
     }
     .distributor{
         height: 40px;
-        width: 185px;
+        width: 155px;
 
     }
 
@@ -638,7 +641,7 @@ p{
         width: 37%;
     }
     .distributor{
-        height: 35px;
+        height: 30px;
         width: 145px;
 
     }

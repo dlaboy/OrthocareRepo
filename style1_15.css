@@ -11,6 +11,17 @@ body{
     
 }
 
+@keyframes fadeHome {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+nav{
+    animation: fadeHome 1s ease-out forwards;
+    
+}
+
+
+
 .lang{
     position: fixed;
     right: 0px;
@@ -53,7 +64,7 @@ body{
     height: 13vh;
 }
 .Nav_home{
-    background: linear-gradient(rgb(0, 44, 72),rgba(0, 44, 72, 0.416)),url('./imgs/bac&cont/pexels-engin-akyurt-2678059.jpg');
+    background: linear-gradient(rgb(0, 44, 72),rgba(0, 44, 72, 0.491)),url('./imgs/bac&cont/pexels-engin-akyurt-2678059.jpg');
     background-size: cover;
     background-position: center;
     height: 95vh;
@@ -75,11 +86,10 @@ body{
     height: 85vh;
     /* margin-top: 2rem; */
     /* background-color: rgb(238, 238, 238); */
-    background-color: rgba(255, 255, 255, 0.864);
-    
+    background-color: rgb(255, 255, 255);
     /* background-color: white; */
     /* box-shadow: 12px 12px 2px 1px rgba(1, 1, 81, 0.2); */
-    max-height: 800px;
+    max-height: 1100px;
     
 }
 .form-para-enviar{
@@ -97,11 +107,15 @@ body{
     width: 80%;
     font-size: clamp(1rem, 1.5vw, 1.1rem);
 }
+.nav-link{
+    color: white;
+}
 .nav-link:hover{
-    font-weight: bolder;
-    text-decoration: underline;
+    /* font-weight: bolder; */
+    /* text-decoration: underline; */
+    color: grey;
     
-    transition: all ease-in-out .5s;
+    transition: all ease-in .2s;
 
 }
 
@@ -116,13 +130,15 @@ body{
 
 
 .see{
-    color: black;
+    color: white;
+    /* color: rgba(66,191,171); */
+    /* background-color: rgb(53, 163, 145) ; */
+  background: linear-gradient(rgba(0, 44, 72, 0.262),rgba(0, 44, 72, 0.226));
+
+
 }
-.life{
-    /* font-family: 'Dela Gothic One', cursive; */
-    color:white;
-    font-size: large;
-}
+
+
 .contact-life{
     /* font-family: 'Dela Gothic One', cursive; */
     color: rgba(66,191,171);
@@ -139,8 +155,17 @@ body{
 
 }
 
-.see:hover{
+/* .see:hover{
     color: rgba(66,191,171);
+    cursor: pointer;
+    background-color: rgb(34, 100, 89);
+    background-color: rgba(66,191,171) ;
+
+
+
+} */
+.see:active{
+    background-color: rgb(34, 100, 89);
 
 }
 #ps{
@@ -168,16 +193,21 @@ body{
     
 }
 #contact{
-    background-image: url(imgs/bac&cont/escritorio-vacio-consultorio-medico-computadora-e-instrumentos-medicos-nadie-gabinete-utiliza-cita-consulta-visita-control-donde-medico-trata-pacientes-enfermedades_482257-41824.jpg);
+    background: linear-gradient(rgba(0, 44, 72, 0.777),rgba(0, 44, 72, 0.696)),url('imgs/bac&cont/escritorio-vacio-consultorio-medico-computadora-e-instrumentos-medicos-nadie-gabinete-utiliza-cita-consulta-visita-control-donde-medico-trata-pacientes-enfermedades_482257-41824.jpg');
+    /* background-image: url(); */
+    /* background-image: url(imgs/bac&cont/escritorio-vacio-consultorio-medico-computadora-e-instrumentos-medicos-nadie-gabinete-utiliza-cita-consulta-visita-control-donde-medico-trata-pacientes-enfermedades_482257-41824.jpg); */
     /* height: 90vh; */
     background-size: cover;
 }
 .form{
-    background-color: rgba(79, 91, 118, 0.616);
+    /* background-color: rgb(79, 91, 118); */
+    background-color: rgba(0, 44, 72, 0.048);
+    /* background-color: rgb(248, 246, 246); */
+    
     height: 75%;
     /* min-width: 30vw; */
     height: 90vh;
-}
+}   
 .info{
     background-color: rgb(248, 246, 246);
     min-width: 50vw;
@@ -189,12 +219,29 @@ body{
     display: flex;
     flex: row;
 }
+
+
 .letras-home{
     /* height: 15vh; */
     /* font-size: 15vh; */
     /* max-width: 90vw; */
     font-size: clamp(3rem, 10vw, 5rem);
+    animation: fadeHome 2s ease-out forwards;
 }
+
+.life{
+    /* font-family: 'Dela Gothic One', cursive; */
+    color:white;
+    /* font-size: large; */
+    font-size: small;
+    animation: fadeHome 1s ease-out forwards;
+
+}
+
+
+
+
+
 
 
 p{
@@ -209,7 +256,7 @@ p{
 }
 
 .titles{
-    color: navy;
+    color: rgba(0, 44, 72, 0.849)
 
 }
 .about-images{
@@ -239,7 +286,7 @@ p{
 .nav{
     
     /* background: linear-gradient(rgba(7, 71, 111, 0.564), rgba(66,191,171));  */
-    background: linear-gradient(rgba(0, 44, 72, 0.849),rgba(0, 8, 49, 0.007), rgba(1, 13, 55, 0.056));
+    background: linear-gradient(rgba(0, 44, 72, 0.849),rgba(0, 8, 49, 0.007), rgba(1, 13, 55, 0));
 
     /* position: s;
     top: 0; */
@@ -428,7 +475,8 @@ p{
     height: 300px;
 }
 .news-title{
-    color: rgb(0,95,154);
+    color: rgba(0, 44, 72, 0.849)
+
 }
 .oswald{
     /* font-family: 'Oswald', sans-serif; */
@@ -441,15 +489,28 @@ p{
 }
 
 .head{
-  background: linear-gradient(rgba(1, 50, 113, 0.732),rgba(1, 50, 113, 0.459));
+  /* background: linear-gradient(rgb(1, 50, 113),rgb(1, 50, 113)); */
+  background: linear-gradient(rgba(0, 44, 72, 0.262),rgba(0, 44, 72, 0.226));
   /* background: linear-gradient(rgba(1, 50, 113, 0.732),rgba(1, 113, 104, 0.732)),url('./imgs/bac&cont/head.jpg'); */
   background-size: cover;
-  height: 75px;
+  height: 45px;
   color: #20202000;
 
 }
+.art:hover > .head, .art:hover > .read >.see {
+    /* background-color: rgba(66,191,171) ; */
+  /* background: linear-gradient(rgb(0, 44, 72),rgb(0, 44, 72)); */
+  /* background: linear-gradient(rgb(0, 44, 72),rgba(0, 44, 72, 0.918)),url('imgs/bac&cont/escritorio-vacio-consultorio-medico-computadora-e-instrumentos-medicos-nadie-gabinete-utiliza-cita-consulta-visita-control-donde-medico-trata-pacientes-enfermedades_482257-41824.jpg'); */
+  background: rgba(0, 44, 72, 0.849);
+
+
+
+}
+
 #science{
-  background-color: white;
+  background-color: rgb(248, 246, 246);
+
+
 }
 .art{
     min-width: 325px;
@@ -479,7 +540,7 @@ input::placeholder, textarea::placeholder{
     color: white;
 }
 .art > h3{
-    font-size: 22px ;
+    font-size: 18px ;
 }
 .articles{
     width: 90%;
@@ -539,7 +600,7 @@ input::placeholder, textarea::placeholder{
         width: 88%;
     }
     #about-us{
-        height: 600px;
+        height: 400px;
 
     }
     .input-group-fix{
@@ -700,7 +761,7 @@ input::placeholder, textarea::placeholder{
 }
 @media  screen and (min-width: 501px) and (max-width: 850px){
     #about-us{
-        height: 900px;
+        height: 1000px;
 
     }
     .input-group-fix{
